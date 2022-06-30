@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family:"GillSans-Bold";
+  src: url(../public/fonts/GillSans-Bold.ttf);
+  font-weight: bold;
+}
+@font-face{
+  font-family: "GillSans-Regular";
+  src: url(../public/fonts/GillSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Gillsans-Light";
+  src: url(../public/fonts/GillSans-Light.ttf);
+}
