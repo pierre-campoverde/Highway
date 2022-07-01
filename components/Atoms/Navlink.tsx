@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+
 type Props = {
   label: string;
   to: string;
@@ -8,13 +10,16 @@ type Props = {
 const Navlink = ({ to, label, size }: Props) => {
   return (
     <Link href={to}>
-      <a
+      <motion.a
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0.2 }}
+        transition={{ delay: 0.3 }}
         className={`font-gillSansRegular ${
           "text-" + size
         } text-gray-400 hover:text-customBlue`}
       >
         {label}
-      </a>
+      </motion.a>
     </Link>
   );
 };

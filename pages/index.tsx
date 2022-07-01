@@ -1,12 +1,21 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Button from "../components/Atoms/Button";
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <main className="h-screen z-0">
-        <p>inicio</p>
+      <main className="">
+        <div className="">
+          <Image
+            src={"/Hero.png"}
+            alt="Highway car"
+            layout="responsive"
+            width={500}
+            height={500}
+          />
+        </div>
       </main>
     </Layout>
   );

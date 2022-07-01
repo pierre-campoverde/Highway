@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="transition ease-in-out z-10">
+      <div className="transition ease-in-out">
         <div className="flex items-center justify-between px-4 py-2 ">
           <Logo />
           <ul className="hidden sm:flex">
@@ -39,7 +39,7 @@ const Navbar = () => {
           </ul>
           <NavButton callback={toggleMenu} />
         </div>
-        <ResponsiveNavbar open={menuOpen} />
+        <ResponsiveNavbar open={menuOpen} callback={toggleMenu} />
       </div>
     </>
   );
