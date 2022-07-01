@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="transition ease-in-out z-10">
         <div className="flex items-center justify-between px-4 py-2 ">
           <Logo />
-          <ul className="flex">
+          <ul className="hidden sm:flex">
             <li className="m-4">
               <Navlink size="xl" label="Inicio" to="/" />
             </li>
