@@ -13,7 +13,7 @@ const ResponsiveNavbar = ({ open, callback }: Props) => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
-        className="sm:hidden h-screen  top-0 flex w-full rounded-b-xl absolute w-full z-10"
+        className="sm:hidden h-screen top-0 flex w-full rounded-b-xl fixed w-full z-10"
       >
         <nav className="bg-white w-10/12 h-full ">
           <div>
