@@ -1,12 +1,12 @@
 import React from "react";
-import PrimaryButton from "./Atoms/Button";
+import Navbar from "./Organisms/Navbar";
 type Props = {
   children: JSX.Element | JSX.Element[];
 };
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <p>Navbar</p>
+      <Navbar />
       {children}
       <p>Footer</p>
     </>

@@ -5,7 +5,9 @@ import Layout from "../components/Layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Button />
+      <main className="h-screen z-0">
+        <p>inicio</p>
+      </main>
     </Layout>
   );
 };

@@ -11,10 +11,15 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "framer-motion": "^6.3.16",
+    "install": "^0.13.0",
     "next": "12.2.0",
+    "npm": "^8.13.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "storybook-addon-next": "^1.6.7"
+    "react-icons": "^4.4.0",
+    "storybook-addon-next": "^1.6.7",
+    "storybook-addon-next-router": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",

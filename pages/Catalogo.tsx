@@ -1,8 +1,13 @@
+import Layout from "components/Layout";
 import { NextPage } from "next";
 import React from "react";
 
 const Catalogo: NextPage = () => {
-  return <div>Catalogo</div>;
+  return (
+    <Layout>
+      <main className="h-screen"></main>
+    </Layout>
+  );
 };
 
 export default Catalogo;

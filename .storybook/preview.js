@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import { RouterContext } from "next/dist/shared/lib/router-context";
+import { withNextRouter } from "storybook-addon-next-router";
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -8,8 +10,6 @@ export const parameters = {
     },
   },
   nextRouter: {
-    query: {
-      foo: "this-is-a-global-override",
-    },
+    Provider: RouterContext.Provider,
   },
 };
