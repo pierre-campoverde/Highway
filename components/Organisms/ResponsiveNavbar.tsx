@@ -21,23 +21,23 @@ const ResponsiveNavbar = ({ open, callback }: Props) => {
           </div>
           <ul className="mx-auto border p-5">
             <li className="my-4">
-              <Navlink size="2xl" label="Inicio" to="/" />
+              <Navlink size="text-2xl" label="Inicio" to="/" />
+            </li>
+            <li className="my-4 w-full border">
+              <Navlink size="text-2xl" label="Catalogo" to="/Catalogo" />
             </li>
             <li className="my-4">
-              <Navlink size="2xl" label="Catalogo" to="/Catalogo" />
-            </li>
-            <li className="my-4">
-              <Navlink size="2xl" label="Contacto" to="/Contacto" />
+              <Navlink size="text-2xl" label="Contacto" to="/Contacto" />
             </li>
             <li className="my-4">
               <Navlink
-                size="2xl"
+                size="text-2xl"
                 label="Politicas de renta"
                 to="/PoliticasRenta"
               />
             </li>
             <li className="my-4">
-              <Navlink size="2xl" label="FAQ" to="/PreguntasFrecuentes" />
+              <Navlink size="text-2xl" label="FAQ" to="/PreguntasFrecuentes" />
             </li>
           </ul>
         </nav>

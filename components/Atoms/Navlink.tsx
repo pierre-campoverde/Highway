@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 type Props = {
   label: string;
   to: string;
-  size: "xl" | "lg" | "2xl";
+  size: "text-xl" | "text-lg" | "text-2xl";
 };
 const Navlink = ({ to, label, size }: Props) => {
   return (
@@ -14,9 +14,7 @@ const Navlink = ({ to, label, size }: Props) => {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0.2 }}
         transition={{ delay: 0.3 }}
-        className={`font-gillSansRegular ${
-          "text-" + size
-        } text-gray-400 hover:text-customBlue`}
+        className={`font-gillSansRegular w-full bg-gray-100 ${size} p-2 text-gray-400 hover:text-customBlue`}
       >
         {label}
       </motion.a>

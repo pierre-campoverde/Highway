@@ -18,7 +18,7 @@ const Home: NextPage = () => {
               height={500}
             />
           </div>
-          <section className="p-5 rounded-2xl transform -translate-y-10 bg-white">
+          <section className="p-5 h-screen rounded-2xl transform -translate-y-10 bg-white">
             <div className="container">
               <Heading blackText="Flota de autos" redText="par alquilar" />
             </div>
