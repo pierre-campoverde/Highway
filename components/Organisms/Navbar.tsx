@@ -8,7 +8,9 @@ import ResponsiveNavbar from "./ResponsiveNavbar";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
+    setMenuOpen(!menuOpen);
+  };
+  const outsideClick = () => {
     setMenuOpen(!menuOpen);
   };
   return (
@@ -39,7 +41,11 @@ const Navbar = () => {
           </ul>
           <NavButton callback={toggleMenu} />
         </div>
-        <ResponsiveNavbar open={menuOpen} callback={toggleMenu} />
+        <ResponsiveNavbar
+          open={menuOpen}
+          callback={toggleMenu}
+          outsideClick={outsideClick}
+        />
       </div>
     </>
   );

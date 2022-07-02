@@ -6,8 +6,9 @@ import AltHeading from "components/Atoms/AltHeading";
 type Props = {
   open: boolean;
   callback?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  outsideClick: () => void;
 };
-const ResponsiveNavbar = ({ open, callback }: Props) => {
+const ResponsiveNavbar = ({ open, callback, outsideClick }: Props) => {
   if (open) {
     return (
       <motion.div
@@ -21,6 +22,7 @@ const ResponsiveNavbar = ({ open, callback }: Props) => {
           animate={{ opacity: 0.3 }}
           transition={{ duration: 0.4, delay: 0.1 }}
           className=" w-auto p h-full bg-black  w-2/12"
+          onClick={outsideClick}
         ></motion.div>
         <nav className="bg-white p-5 w-10/12 h-full flex flex-col">
           <div className=" flex items-center justify-between">
