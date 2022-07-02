@@ -1,7 +1,47 @@
+import FooterLink from "components/Atoms/FooterLink";
+import SocialMediaButton from "components/Atoms/SocialmediaLink";
+import Logo from "components/Molecules/Logo";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <div className="p-5 bg-gray-200">
+        <div className="flex justify-center">
+          <Logo />
+        </div>
+        <div className="flex flex-col">
+          <p className="text-customRed text-xl font-gillSansRegular">FAQ</p>
+          <nav>
+            <ul>
+              <li className="my-4 ">
+                <FooterLink to="" label="Politica de renta" />
+              </li>
+              <li className="my-4 ">
+                <FooterLink to="" label="Preguntas frecuentes" />
+              </li>
+              <li className="my-4 ">
+                <FooterLink to="" label="Contacto" />
+              </li>
+              <li className="my-4 ">
+                <FooterLink to="" label="Sobre nosotros" />
+              </li>
+            </ul>
+          </nav>
+          <div className="border flex justify-center">
+            <SocialMediaButton platform="instagram" to="" />
+            <SocialMediaButton platform="facebook" to="" />
+            <SocialMediaButton platform="twitter" to="" />
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full bg-customRed text-center p-4">
+        <p className="text-white">Copyright 2022 © All rights reserved</p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

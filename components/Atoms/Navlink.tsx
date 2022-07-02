@@ -11,7 +11,7 @@ const Navlink = ({ to, label, size }: Props) => {
   return (
     <Link href={to}>
       <a
-        className={`font-gillSansRegular block w-full ${size} p-2 text-gray-400 hover:text-customBlue`}
+        className={`font-gillSansRegular block w-full ${size} p-2 text-gray-500 hover:text-customBlue`}
       >
         {label}
       </a>
