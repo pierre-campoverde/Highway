@@ -14,7 +14,7 @@ const Navlink = ({ to, label, size }: Props) => {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0.2 }}
         transition={{ delay: 0.3 }}
-        className={`font-gillSansRegular w-full bg-gray-100 ${size} p-2 text-gray-400 hover:text-customBlue`}
+        className={`font-gillSansRegular block w-full ${size} p-2 text-gray-400 hover:text-customBlue`}
       >
         {label}
       </motion.a>
