@@ -36,7 +36,8 @@ const Home: NextPage = () => {
             </div>
           </section>
         </div>
-        <section className="container snap-x mx-auto border">
+        {/**/}
+        <section className="container mx-auto border">
           <div className="text-center my-10">
             <AltHeading label="NUESTROS COCHES" />
           </div>
@@ -52,7 +53,9 @@ const Home: NextPage = () => {
               />
             ))}
           </div>
-          <div className="snap-x"></div>
+          <div className="flex justify-center">
+            <Button type="terciary" label="Ver mas" />
+          </div>
         </section>
       </main>
     </Layout>
