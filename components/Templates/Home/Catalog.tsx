@@ -5,6 +5,8 @@ import Subheading from "components/Atoms/Subheading";
 import Card from "components/Organisms/Card";
 import React from "react";
 import data from "../../../data/carsCatalog.json";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+
 const Catalog = () => {
   return (
     <section className="container mx-auto py-10">
@@ -14,7 +16,10 @@ const Catalog = () => {
 
         <Body content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, a?" />
       </div>
-      <div className="flex overflow-auto snap-x scrollbar">
+      <div className="sm:w-11/12 mx-auto flex overflow-auto snap-x scrollbar relative">
+        <button className="sticky left-0 text-3xl bg-white top-2/4 rounded-full w-10 hover:bg-black  ">
+          <MdKeyboardArrowLeft />
+        </button>
         {data.map((car) => (
           <Card
             key={car.model}
@@ -25,6 +30,10 @@ const Catalog = () => {
             price={car.price}
           />
         ))}
+
+        <button className="top-2/4 right-0 text-3xl bg-white sticky rounded-full p-1">
+          <MdKeyboardArrowRight />
+        </button>
       </div>
       <div className="flex justify-center w-7/12 sm:w-2/12 mx-auto">
         <Button type="terciary" label="Ver mas" />

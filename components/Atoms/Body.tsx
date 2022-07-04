@@ -3,7 +3,7 @@ type Props = {
   content: string;
 };
 const Body = ({ content }: Props) => {
-  return <p className="text-gray-600 text-2xl font-gillSansLight">{content}</p>;
+  return <p className="text-gray-500 text-2xl ">{content}</p>;
 };
 
 export default Body;

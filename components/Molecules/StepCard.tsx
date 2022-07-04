@@ -4,9 +4,9 @@ type Props = {
   title: string;
   description: string;
 };
-const ServiceCard = ({ children, title, description }: Props) => {
+const Step = ({ children, title, description }: Props) => {
   return (
-    <div className="bg-gray-200 rounded-xl w-80 m-4 flex flex-col items-center p-3 py-4 ">
+    <div className="bg-gray-200 rounded-xl w-80 h-64 m-4 sm:mx-5 flex flex-col justify-center items-center p-3 py-4 ">
       <div className="bg-customRed text-white p-5 rounded-full inline-block text-4xl">
         {children}
       </div>
@@ -18,4 +18,4 @@ const ServiceCard = ({ children, title, description }: Props) => {
   );
 };
 
-export default ServiceCard;
+export default Step;

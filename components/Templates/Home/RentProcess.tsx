@@ -1,7 +1,7 @@
 import AltHeading from "components/Atoms/AltHeading";
 import Body from "components/Atoms/Body";
 import Subheading from "components/Atoms/Subheading";
-import ServiceCard from "components/Molecules/ServiceCard";
+import StepCard from "components/Molecules/StepCard";
 import React from "react";
 import { AiFillCar } from "react-icons/ai";
 
@@ -14,24 +14,24 @@ const RentProcess = () => {
         <Body content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, a?" />
       </div>
       <div className="flex flex-wrap m-2 justify-center">
-        <ServiceCard
+        <StepCard
           title="Choose a location"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
         >
           <AiFillCar />
-        </ServiceCard>
-        <ServiceCard
+        </StepCard>
+        <StepCard
           title="Step 1"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
         >
           <AiFillCar />
-        </ServiceCard>
-        <ServiceCard
+        </StepCard>
+        <StepCard
           title="Step 1"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
         >
           <AiFillCar />
-        </ServiceCard>
+        </StepCard>
       </div>
     </section>
   );
