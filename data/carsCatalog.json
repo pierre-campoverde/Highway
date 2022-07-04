@@ -1,0 +1,74 @@
+[
+    {
+        "model": "Honda Civic",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 30
+    },
+    {
+        "model": "Jeep Rubicon",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 50
+    },
+    {
+        "model": "Chevrolet Camaro",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 45
+    },
+    {
+        "model": "Hyundai Tucson",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 78
+    },
+    {
+        "model": "Mazda Z5",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 50
+    },
+    {
+        "model": "BMW X5",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 30
+    },
+    {
+        "model": "Kia Rio",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 38
+    },
+    {
+        "model": "Fiat 500",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 25
+    },
+    {
+        "model": "Toyota Yaris",
+        "year": 2005,
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Mecanica",
+        "price": 25
+    }
+]

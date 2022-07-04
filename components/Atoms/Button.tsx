@@ -7,7 +7,7 @@ const Button = ({ type, label }: Props) => {
   if (type === "primary") {
     return (
       <button
-        className={`text-white bg-customRed p-3 font-gillSansRegular rounded-xl`}
+        className={`text-white bg-customRed w-full p-2 text-2xl  font-gillSansRegular rounded-xl`}
       >
         {label}
       </button>
@@ -15,7 +15,7 @@ const Button = ({ type, label }: Props) => {
   } else if (type === "secondary") {
     return (
       <button
-        className={`text-white bg-customBlue p-3 font-gillSansRegular rounded-xl`}
+        className={`text-white bg-customBlue p-3 text-2xl font-gillSansRegular rounded-xl`}
       >
         {label}
       </button>
@@ -23,7 +23,7 @@ const Button = ({ type, label }: Props) => {
   } else if (type === "terciary") {
     return (
       <button
-        className={`text-white bg-white border border-2 border-customBlue p-3 font-gillSansRegular rounded-xl text-customBlue`}
+        className={`text-white bg-white border p-3 text-2xl border-2 border-customBlue p-3 font-gillSansRegular rounded-xl text-customBlue`}
       >
         {label}
       </button>
