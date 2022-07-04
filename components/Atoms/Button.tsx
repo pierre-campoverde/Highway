@@ -23,7 +23,7 @@ const Button = ({ type, label }: Props) => {
   } else if (type === "terciary") {
     return (
       <button
-        className={`text-customBlue bg-white border p-2 text-2xl border-2 border-customBlue p-3 font-gillSansRegular rounded-xl text-customBlue`}
+        className={`text-customBlue bg-white border p-2 w-full text-2xl border-2 border-customBlue p-3 font-gillSansRegular rounded-xl text-customBlue`}
       >
         {label}
       </button>
