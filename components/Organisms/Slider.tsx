@@ -13,7 +13,7 @@ const Slider = () => {
     slider.current!.scrollLeft -= 300;
   };
   return (
-    <div className="relative border">
+    <div className="relative ">
       <button
         onClick={slideRight}
         className="absolute left-5 z-10 text-3xl opacity-50 hover:opacity-100 bg-white top-2/4 rounded-full p-4 hover:drop-shadow-lg "

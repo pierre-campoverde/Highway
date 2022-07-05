@@ -2,16 +2,13 @@ import AltHeading from "components/Atoms/AltHeading";
 import Body from "components/Atoms/Body";
 import Button from "components/Atoms/Button";
 import Subheading from "components/Atoms/Subheading";
-import Card from "components/Organisms/Card";
 import React from "react";
-import data from "../../../data/carsCatalog.json";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import Slider from "components/Organisms/Slider";
 
 const Catalog = () => {
   return (
     <section className="container mx-auto py-10">
-      <div className="text-center border my-4 px-2">
+      <div className="text-center  my-4 px-2">
         <AltHeading label="NUESTROS COCHES" />
         <Subheading redText="red text" blackText="Black text" />
 
