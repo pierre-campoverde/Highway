@@ -7,7 +7,7 @@ const NavButton = ({ callback }: Props) => {
   return (
     <button
       name="Navbar buton"
-      className="sm:hidden bg-gray-100
+      className="md:hidden bg-gray-100
     h-12 w-12 flex
        text-3xl text-customRed
        p-2 rounded-lg cursor-pointer 

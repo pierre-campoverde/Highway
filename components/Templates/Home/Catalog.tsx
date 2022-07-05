@@ -17,7 +17,7 @@ const Catalog = () => {
         <Body content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, a?" />
       </div>
       <div className="sm:w-11/12 mx-auto flex overflow-auto snap-x scrollbar relative">
-        <button className="sticky left-0 text-3xl bg-white top-2/4 rounded-full w-10 hover:bg-black  ">
+        <button className="sticky left-0 text-3xl bg-white top-2/4 rounded-full  hover:bg-black  ">
           <MdKeyboardArrowLeft />
         </button>
         {data.map((car) => (

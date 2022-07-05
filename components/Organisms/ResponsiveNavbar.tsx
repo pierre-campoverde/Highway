@@ -15,7 +15,7 @@ const ResponsiveNavbar = ({ open, callback, outsideClick }: Props) => {
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
-        className="sm:hidden h-screen top-0 flex w-full rounded-b-xl fixed w-full z-10"
+        className="md:hidden h-screen top-0 flex w-full rounded-b-xl fixed w-full z-10"
       >
         <motion.div
           initial={{ opacity: 0 }}

@@ -7,7 +7,7 @@ import { AiFillCar } from "react-icons/ai";
 
 const RentProcess = () => {
   return (
-    <section className="mx-auto container ">
+    <section className="mx-auto container py-10">
       <div className="text-center my-4 px-2">
         <AltHeading label="COMO RENTAR" />
         <Subheading redText="rapido" blackText="Proceso agil y " />

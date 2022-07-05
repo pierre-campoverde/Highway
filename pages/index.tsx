@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <main className="py-10">
+      <main className="">
         <Hero />
         <Catalog />
         <RentProcess />

@@ -1,3 +1,4 @@
+const { url } = require("inspector");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,6 +16,9 @@ module.exports = {
         customRed: "#d50037",
         customBlue: "#002e5b",
         customGray: "#54565a",
+      },
+      backgroundImage: {
+        heroImage: "url(../public/Hero.png)",
       },
     },
   },

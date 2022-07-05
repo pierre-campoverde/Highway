@@ -15,10 +15,10 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="transition ease-in-out">
+      <div className="">
         <div className="flex items-center justify-between px-4 py-2 ">
           <Logo />
-          <ul className="hidden sm:flex">
+          <ul className="hidden md:flex">
             <li className="m-4">
               <Navlink size="text-xl" label="Inicio" to="/" />
             </li>
