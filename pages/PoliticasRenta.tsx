@@ -1,12 +1,30 @@
 import Layout from "components/Layout";
+import RentPoint from "components/Organisms/RentPoint";
 import { NextPage } from "next";
 import React from "react";
 
 const PoliticasRenta: NextPage = () => {
   return (
     <Layout>
-      <main className="h-screen">
-        <p>politicas de renta</p>
+      <main className="min-h-screen mx-auto container">
+        <section className="py-5 divide-y-2 ">
+          <RentPoint
+            topic="Topic title"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum id ratione consectetur quibusdam in quaerat aut neque accusantium. Eaque repellendus reiciendis aliquid blanditiis consequuntur laboriosam excepturi explicabo, omnis iusto magnam!"
+          />
+          <RentPoint
+            topic="Topic title"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum id ratione consectetur quibusdam in quaerat aut neque accusantium. Eaque repellendus reiciendis aliquid blanditiis consequuntur laboriosam excepturi explicabo, omnis iusto magnam!"
+          />
+          <RentPoint
+            topic="Topic title"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum id ratione consectetur quibusdam in quaerat aut neque accusantium. Eaque repellendus reiciendis aliquid blanditiis consequuntur laboriosam excepturi explicabo, omnis iusto magnam!"
+          />
+          <RentPoint
+            topic="Topic title"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum id ratione consectetur quibusdam in quaerat aut neque accusantium. Eaque repellendus reiciendis aliquid blanditiis consequuntur laboriosam excepturi explicabo, omnis iusto magnam!"
+          />
+        </section>
       </main>
     </Layout>
   );
