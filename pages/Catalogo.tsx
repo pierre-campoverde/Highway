@@ -5,7 +5,9 @@ import React from "react";
 const Catalogo: NextPage = () => {
   return (
     <Layout>
-      <main className="h-screen"></main>
+      <main className="h-screen">
+        <section className="flex flex-wrap"></section>
+      </main>
     </Layout>
   );
 };

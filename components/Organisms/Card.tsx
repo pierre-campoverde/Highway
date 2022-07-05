@@ -11,7 +11,7 @@ type Props = {
 };
 const Card = ({ price, model, transmision, passengers, fuel }: Props) => {
   return (
-    <div className="bg-gray-200 snap-center m-5 min-w-max w-72 h-auto rounded-xl">
+    <div className="bg-gray-200 mx-2 snap-center  min-w-max w-72 h-auto rounded-xl">
       <div className="w-72 h-40 bg-gray-500 relative rounded-t-xl">
         <div className="p-2 bg-customBlue text-white absolute bottom-0 right-0 m-2 rounded">
           <p className="text-xl">{price}$/dia</p>
