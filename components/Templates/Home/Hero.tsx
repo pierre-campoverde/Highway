@@ -3,10 +3,19 @@ import Button from "components/Atoms/Button";
 import Heading from "components/Atoms/Heading";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 const Hero = () => {
   return (
-    <section className="sm:flex  h-screen justify-center items-center ">
-      <div className="sm:w-5/12 h-5/6  bg-heroImage bg-no-repeat bg-cover rounded-2xl "></div>
+    <section className="sm:flex sm:my-20 h-auto justify-center items-center ">
+      <div className="sm:w-5/12 bg-heroImage bg-no-repeat bg-cover rounded-2xl ">
+        <Image
+          src={"/Hero.png"}
+          layout={"responsive"}
+          width={600}
+          height={600}
+          alt="Hero image"
+        />
+      </div>
       <div className="sm:w-5/12 p-5  align-center rounded-2xl transform -translate-y-10 bg-white">
         <motion.div
           initial={{ opacity: 0 }}
