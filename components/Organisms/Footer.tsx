@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex justify-center">
           <Logo />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col my-2 md:w-11/12 md:mx-auto">
           <p className="text-customRed text-xl font-gillSansRegular">FAQ</p>
           <nav>
             <ul>

@@ -4,11 +4,15 @@ import Subheading from "components/Atoms/Subheading";
 import Layout from "components/Layout";
 import Question from "components/Molecules/Question";
 import { NextPage } from "next";
+import Head from "next/head";
 import React from "react";
 
 const PreguntasFrecuentes: NextPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>FAQ | Highway</title>
+      </Head>
       <main className="min-h-screen">
         <div className="text-center my-4 px-2">
           <AltHeading label="COMO RENTAR" />
