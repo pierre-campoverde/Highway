@@ -11,8 +11,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         secure: true,
         auth: {
             user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASSWORD
+            pass: process.env.SMTP_PASSWORD,
+
         }
+
     });
     try {
         await transporter.sendMail({
@@ -25,8 +27,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
             <p><strong>Message: </strong> ${Mensaje}</p></br>
             `
         });
+
     } catch (error) {
-        console.log(error);
         return res.status(500);
     }
     return res.status(200).json({ error: "" });

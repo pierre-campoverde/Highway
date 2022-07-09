@@ -19,7 +19,7 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (inputs.Nombre && inputs.Email && inputs.Mensaje) {
-      setFormState({ state: "Loading", message: "" });
+      setFormState({ state: "loading", message: "" });
       try {
         const res = await fetch("api/contact", {
           method: "POST",
@@ -53,19 +53,32 @@ const ContactForm = () => {
       }
     }
   };
-  console.log(inputs);
   return (
     <form onSubmit={handleSubmit}>
-      <InputGroup callback={handleChange} type="text" label="Nombre" />
-      <InputGroup callback={handleChange} type="email" label="Email" />
-      <TextArea callback={handleChange} />
+      <InputGroup
+        status={formState.state}
+        callback={handleChange}
+        type="text"
+        label="Nombre"
+      />
+      <InputGroup
+        status={formState.state}
+        callback={handleChange}
+        type="email"
+        label="Email"
+      />
+      <TextArea status={formState.state} callback={handleChange} />
+
       <input
         type="submit"
-        value="Enviar"
-        className="bg-white text-customRed font-semibold border border-customRed border-2 rounded-lg w-full sm:w-6/12 h-14 text-lg cursor-pointer hover:bg-customRed hover:text-white md:float-right"
+        disabled={formState.state === "loading" ? true : false}
+        value={formState.state === "loading" ? "Enviando" : "Enviar"}
+        className="bg-white  text-customRed font-semibold border border-customRed border-2 rounded-lg w-full sm:w-6/12 h-14 text-lg cursor-pointer hover:bg-customRed hover:text-white md:float-right
+        disabled:cursor-progress disabled:opacity-50 disabled:text-white disabled:bg-customRed
+        "
       />
       {formState.state === "loading" ? (
-        <div>Sending....</div>
+        <div className="w-full text-semibold">Enviando...</div>
       ) : formState.state === "error" ? (
         <div>{formState.message}</div>
       ) : (
