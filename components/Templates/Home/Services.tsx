@@ -10,11 +10,11 @@ const Services = () => {
     <section className="mx-auto py-10  py-6 container">
       <div className="flex justify-center flex-col sm:flex-row">
         <div className="text-center sm:w-4/12 my-4 px-2 sm:text-left  block">
-          <AltHeading label="NUESTROS COCHES" />
+          <AltHeading label="NUESTROS SERVICIOS" />
           <Subheading redText="red text" blackText="Black text" />
           <Body content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, a?" />
         </div>
-        <div className="grid grid-cols-2 gap-4 border mx-auto sm:mx-0">
+        <div className="grid grid-cols-2 gap-4  mx-auto sm:mx-0">
           <ServiceCard label="Service Name">
             <RiMedalFill />
           </ServiceCard>

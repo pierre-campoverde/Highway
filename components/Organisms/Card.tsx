@@ -1,5 +1,6 @@
 import Button from "components/Atoms/Button";
 import CarProp from "components/Atoms/CarProp";
+import Image from "next/image";
 import React from "react";
 type Props = {
   price: number;
@@ -9,10 +10,21 @@ type Props = {
   fuel: string;
   callback?: () => void;
 };
+const myLoader = () => {
+  return <div className="w-72 h-40 animate-pulse bg-gray-400"></div>;
+};
 const Card = ({ price, model, transmision, passengers, fuel }: Props) => {
   return (
     <div className="bg-gray-200 mx-2 snap-center  min-w-max w-72 h-auto rounded-xl">
-      <div className="w-72 h-40 bg-gray-500 relative rounded-t-xl">
+      <div className="w-72 h-40 bg-gray-500 relative rounded-t-xl overflow-hidden">
+        <Image
+          loading="lazy"
+          src={"/model1.jpeg"}
+          alt="Modelo 1"
+          layout="responsive"
+          width={213}
+          height={160}
+        />
         <div className="p-2 bg-customBlue text-white absolute bottom-0 right-0 m-2 rounded">
           <p className="text-xl">{price}$/dia</p>
         </div>

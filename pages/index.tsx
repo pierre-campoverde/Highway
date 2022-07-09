@@ -10,13 +10,19 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Highway car rental</title>
+        <title>Highway Car Rental</title>
+        <meta
+          name="description"
+          content="Alquiler de autos en Cancún, México. Renta un coche fácil y rapido"
+        />
+        <meta charSet="UTF-8" />
       </Head>
       <main className="">
         <Hero />
-        <Catalog />
         <RentProcess />
+        <Catalog />
         <Services />
+
         <Contact />
       </main>
     </Layout>

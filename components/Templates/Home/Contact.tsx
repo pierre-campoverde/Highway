@@ -3,8 +3,11 @@ import Body from "components/Atoms/Body";
 import Button from "components/Atoms/Button";
 import SocialMediaButton from "components/Atoms/SocialmediaLink";
 import Subheading from "components/Atoms/Subheading";
+import WhatsappButton from "components/Atoms/WhatsappButton";
+import ContactInfo from "components/Molecules/ContactInfo";
 import ContactForm from "components/Organisms/ContactForm";
 import React from "react";
+import { AiFillPhone, AiTwotoneEnvironment } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -16,14 +19,29 @@ const Contact = () => {
 
       <div className="flex flex-col text-center sm:flex-row sm:text-left lg:w-8/12 mx-auto ">
         <div className="flex px-3 flex-col w-11/12 md:w-5/12 mx-auto md:mt-20 ">
-          <Body content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus finibus leo" />
-          <div className="w-full mx-auto mt-4 ">
-            <Button type="primary" label="CONTACTAR" />
+          <Body content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+          <div className="flex-col">
+            <ContactInfo href="tel:555-555-555" label="555-555-555">
+              <span className="text-customRed text-3xl">
+                <AiFillPhone />
+              </span>
+            </ContactInfo>
+            <ContactInfo
+              href="https://goo.gl/maps/8vMTp2FcnaPQZYMh7"
+              label="Av.xxxxxxxx"
+            >
+              <span className="text-customRed text-3xl">
+                <AiTwotoneEnvironment />
+              </span>
+            </ContactInfo>
           </div>
           <div className="flex justify-center my-2">
             <SocialMediaButton platform="instagram" to="" />
             <SocialMediaButton platform="facebook" to="" />
             <SocialMediaButton platform="twitter" to="" />
+          </div>
+          <div className="w-full mx-auto  ">
+            <WhatsappButton />
           </div>
         </div>
         <div className="form w-11/12 md:w-5/12 mx-auto text-center">

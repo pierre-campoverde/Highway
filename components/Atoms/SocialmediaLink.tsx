@@ -1,7 +1,7 @@
 import React from "react";
 import {
   AiOutlineInstagram,
-  AiOutlineFacebook,
+  AiFillFacebook,
   AiOutlineTwitter,
 } from "react-icons/ai";
 type Props = {
@@ -12,7 +12,7 @@ const platformIcon = (platform: Props["platform"]) => {
   if (platform === "instagram") {
     return <AiOutlineInstagram />;
   } else if (platform === "facebook") {
-    return <AiOutlineFacebook />;
+    return <AiFillFacebook />;
   } else if (platform === "twitter") {
     return <AiOutlineTwitter />;
   } else {

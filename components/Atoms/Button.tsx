@@ -15,7 +15,8 @@ const Button = ({ type, label }: Props) => {
   } else if (type === "secondary") {
     return (
       <button
-        className={`text-white bg-customBlue p-2 text-2xl font-gillSansRegular rounded-xl`}
+        className={`text-white bg-customBlue p-2 text-2xl font-gillSansRegular rounded-xl
+        hover:bg-white hover:text-customBlue transition-all`}
       >
         {label}
       </button>

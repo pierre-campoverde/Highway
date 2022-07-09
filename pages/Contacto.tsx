@@ -8,7 +8,7 @@ const Contacto: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Contacto | Highway</title>
+        <title>Contacto | Highway Car Rental</title>
       </Head>
       <main className="h-auto">
         <Contact />

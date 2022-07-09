@@ -15,19 +15,19 @@ const RentProcess = () => {
       </div>
       <div className="flex flex-wrap m-2 justify-center">
         <StepCard
-          title="Choose a location"
+          title="Escoge un vehiculo"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
         >
           <AiFillCar />
         </StepCard>
         <StepCard
-          title="Step 1"
+          title="Presenta tu documentacion"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
         >
           <AiFillCar />
         </StepCard>
         <StepCard
-          title="Step 1"
+          title="Listo para recorrer"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
         >
           <AiFillCar />

@@ -4,15 +4,16 @@ import Heading from "components/Atoms/Heading";
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import WhatsappButton from "components/Atoms/WhatsappButton";
 const Hero = () => {
   return (
     <section className="sm:flex sm:my-20 h-auto justify-center items-center ">
-      <div className="sm:w-5/12 bg-heroImage bg-no-repeat bg-cover rounded-2xl ">
+      <div className="sm:w-5/12  rounded-2xl ">
         <Image
           src={"/Hero.png"}
-          layout={"responsive"}
-          width={600}
-          height={600}
+          layout="responsive"
+          width={371}
+          height={440}
           alt="Hero image"
         />
       </div>
@@ -32,8 +33,8 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="sm:w-6/12 my-2">
-            <Button type="primary" label="CONTACTAR" />
+          <div className="sm:w-6/12 my-5">
+            <WhatsappButton />
           </div>
         </motion.div>
       </div>
