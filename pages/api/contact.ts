@@ -10,8 +10,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         port: 465,
         secure: true,
         auth: {
-            user: "jpcezzane@gmail.com",
-            pass: "fznhwisgmjcpdbbs"
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASSWORD
         }
     });
     try {
