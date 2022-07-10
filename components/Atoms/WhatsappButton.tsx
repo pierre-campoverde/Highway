@@ -5,7 +5,7 @@ const WhatsappButton = () => {
   return (
     <a
       className="flex shadow-2xl shadow-rose-700 transition-all items-center font-gillSansRegular justify-center h-14 text-2xl p-2 w-full rounded-xl text-white bg-customRed hover:bg-rose-700"
-      href="https://www.kindacode.com/article/react-typescript-handling-onclick-event/"
+      href=""
       target={"_blank"}
       rel="noreferrer"
     >

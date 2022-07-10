@@ -17,7 +17,7 @@ const Hero = () => {
           alt="Hero image"
         />
       </div>
-      <div className="sm:w-5/12 p-5  align-center rounded-2xl transform -translate-y-10 bg-white">
+      <div className="sm:w-5/12 p-5  align-center rounded-2xl transform -translate-y-10 sm:translate-y-0 bg-white">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -33,7 +33,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="sm:w-6/12 my-5">
+          <div className="w-full lg:w-6/12 my-5">
             <WhatsappButton />
           </div>
         </motion.div>
