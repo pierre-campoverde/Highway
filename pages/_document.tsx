@@ -8,14 +8,14 @@ const Document = () => {
       <Head>
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-C1VGG4CQ40"
+          src="https://www.googletagmanager.com/gtag/js?id=G-C5LPSE2YH1"
         ></Script>
         <Script id="google-analytics" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
+          {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-C1VGG4CQ40');`}
+  gtag('config', 'G-C5LPSE2YH1');`}
         </Script>
       </Head>
       <body>
