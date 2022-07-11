@@ -10,7 +10,9 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Highway Car Rental</title>
+        <title>
+          Highway Car Rental | Renta un auto en Cancún fácil y rapido.
+        </title>
         <meta
           name="description"
           content="Alquiler de autos en Cancún, México. Renta un coche fácil y rapido"
