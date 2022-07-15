@@ -1,6 +1,5 @@
 import NavButton from "components/Atoms/NavButton";
 import Logo from "components/Molecules/Logo";
-import Image from "next/image";
 import React, { useState } from "react";
 import Navlink from "../Atoms/Navlink";
 import ResponsiveNavbar from "./ResponsiveNavbar";

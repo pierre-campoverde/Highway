@@ -13,7 +13,7 @@ const Slider = () => {
     slider.current!.scrollLeft -= 300;
   };
   return (
-    <div className="relative ">
+    <div className="relative  rounded-3xl">
       <button
         onClick={slideRight}
         className="absolute left-5 z-10 text-3xl opacity-50 hover:opacity-100 bg-white top-2/4 rounded-full p-4 hover:drop-shadow-lg "
@@ -22,16 +22,16 @@ const Slider = () => {
       </button>
       <div
         ref={slider}
-        className="sm:w-11/12 mx-auto flex  overflow-auto scroll-smooth scrollbar"
+        className="sm:w-11/12 mx-auto flex overflow-x-auto py-5 scroll-smooth scrollbar"
       >
         {data.map((car) => (
           <Card
             key={car.model}
+            imageURL={car.imageURL}
             model={car.model}
             fuel={car.fuel}
             transmision={car.transmission}
             passengers={car.passengers}
-            price={car.price}
           />
         ))}
       </div>

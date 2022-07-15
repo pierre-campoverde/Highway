@@ -1,74 +1,162 @@
 [
     {
-        "model": "Honda Civic",
-        "year": 2005,
+        "model": "Nissan March",
+        "category": "A",
         "passengers": 5,
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 30
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/3bdb7007-e021-4f2b-ace3-962f33689551/AMarch.png"
     },
     {
-        "model": "Jeep Rubicon",
-        "year": 2005,
+        "model": "Chevrolet Beat",
         "passengers": 5,
+        "category": "A",
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 50
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/3095e1d6-7850-41cd-b1cf-16d021d36c67/Beat.png"
     },
     {
-        "model": "Chevrolet Camaro",
-        "year": 2005,
+        "model": "Chevrolet Aveo",
         "passengers": 5,
+        "category": "C",
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 45
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/fa535052-6689-4f6f-80d3-8ea9d02138e4/Aveo.png"
     },
     {
-        "model": "Hyundai Tucson",
-        "year": 2005,
+        "model": "Dodge Attitude",
+        "category": "C",
         "passengers": 5,
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 78
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/f97af130-cdd1-4727-b40b-c85d8b63780f/Attitude.png"
     },
     {
-        "model": "Mazda Z5",
-        "year": 2005,
-        "passengers": 5,
+        "model": "Volkswagen Vento",
+        "category": "D",
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 50
+        "passengers": 5,
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/c819a16f-6b3b-4160-8b44-ea13d93e0e5d/Vento.png"
     },
     {
-        "model": "BMW X5",
-        "year": 2005,
+        "model": "Nissan Versa",
         "passengers": 5,
+        "category": "D",
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 30
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/e7388140-3caf-4112-83d4-043a35fdf1f1/Versa.png"
     },
     {
-        "model": "Kia Rio",
-        "year": 2005,
+        "model": "Volkswagen Jetta",
+        "category": "F",
         "passengers": 5,
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 38
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/481bdadc-a10e-4bc2-a7f4-81a3e51951fa/Jetta.png"
     },
     {
-        "model": "Fiat 500",
-        "year": 2005,
+        "model": "Volkswagen Passat",
+        "category": "F",
         "passengers": 5,
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 25
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/59aecdba-0381-48d2-ab2a-6d012fef0216/Passat.png"
     },
     {
-        "model": "Toyota Yaris",
-        "year": 2005,
+        "model": "Nissan Kicks",
+        "category": "L",
         "passengers": 5,
         "fuel": "Gasolina",
-        "transmission": "Mecanica",
-        "price": 25
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/8e739b8a-2c4f-4425-a85c-bc0b4fcabfd2/Kicks.png"
+    },
+    {
+        "model": "Nissan X-Trail",
+        "category": "L",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/4b8c3ed6-8d69-47a4-829a-e4ddf5263ddd/Xtrail.png"
+    },
+    {
+        "model": "Kia Sorento",
+        "category": "T",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/512c9813-2b6c-4017-8f17-38c9daa54526/Sorento.png"
+    },
+    {
+        "model": "Dodge Journey",
+        "category": "T",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/e00fb5e3-be3b-4c84-9be7-cd553598e39a/Journey.png"
+    },
+    {
+        "model": "Toyota Avanza",
+        "category": "T2",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/349e7c64-e7da-4b6c-b245-fda383efdc03/Avanza.png"
+    },
+    {
+        "model": "Suzuki Ertiga",
+        "category": "T2",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/aa64a666-5ce4-4ee9-ab6a-c8c6266d615d/Ertiga.png"
+    },
+    {
+        "model": "Dodge Grand Caravan",
+        "category": "R",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/517fd599-191f-4001-9030-9aefd488b940/Caravan.png"
+    },
+    {
+        "model": "Toyota Sienna",
+        "category": "R",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/453fa5a2-c07f-4bc2-bf36-28cbae0a7181/Sienna.png"
+    },
+    {
+        "model": "Toyota Hiance",
+        "category": "R2",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/bd73c07c-b797-49d0-8dd4-48336816546a/Hiace.png"
+    },
+    {
+        "model": "Nissan Urvan",
+        "category": "R2",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/33572fcf-4718-4c18-bd37-8b982c5f7ffd/Urvan.png"
+    },
+    {
+        "model": "Chevrolet Suburban",
+        "category": "T6",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/09a3e6cc-7e3b-4ba5-b10e-a9c5a3c41e0d/Suburban.png"
+    },
+    {
+        "model": "GMC Yukon",
+        "category": "T6",
+        "passengers": 5,
+        "fuel": "Gasolina",
+        "transmission": "Manual",
+        "imageURL": "https://ucarecdn.com/ab32fa67-8ee6-4a29-9063-0724a94b5550/Yukon.png"
     }
 ]

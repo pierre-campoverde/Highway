@@ -3,33 +3,31 @@ import CarProp from "components/Atoms/CarProp";
 import Image from "next/image";
 import React from "react";
 type Props = {
-  price: number;
   model: string;
   transmision: string;
   passengers: number;
   fuel: string;
+  imageURL: string;
   callback?: () => void;
 };
 const myLoader = () => {
-  return <div className="w-72 h-40 animate-pulse bg-gray-400"></div>;
+  return <div className="w-72 h-40 animate-pulse "></div>;
 };
-const Card = ({ price, model, transmision, passengers, fuel }: Props) => {
+const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
   return (
-    <div className="bg-gray-200 mx-2 snap-center  min-w-max w-72 h-auto rounded-xl">
-      <div className="w-72 h-40 bg-gray-500 relative rounded-t-xl overflow-hidden">
+    <div className=" mx-2 snap-cente bg-white  min-w-max w-72 h-auto rounded-xl shadow-lg	">
+      <div className="w-72 bg-white rounded-t-xl overflow-hidden">
         <Image
           loading="lazy"
-          src={"/model1.jpeg"}
-          alt="Modelo 1"
+          loader={() => imageURL}
+          src={imageURL}
+          alt={model + " to rent in Cancun"}
           layout="responsive"
           width={213}
           height={160}
         />
-        <div className="p-2 bg-customBlue text-white absolute bottom-0 right-0 m-2 rounded">
-          <p className="text-xl">{price}$/dia</p>
-        </div>
       </div>
-      <div className="w-full flex flex-col p-3">
+      <div className="w-full flex flex-col p-3 rounded-xl bg-white">
         <p className="text-xl font-semibold">{model}</p>
         <div className="flex w-9/12 justify-between my-2">
           <CarProp propName="Transmision" value={transmision} />

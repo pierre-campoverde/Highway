@@ -4,7 +4,7 @@ import data from "../../../data/carsCatalog.json";
 const CarsCatalog = () => {
   return (
     <section className="container my-10 mx-auto">
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center py-10 rounded-3xl">
         {data.map((car) => (
           <div className="m-1 sm:m-4" key={car.model}>
             <Card
@@ -13,7 +13,7 @@ const CarsCatalog = () => {
               transmision={car.transmission}
               fuel={car.fuel}
               passengers={car.passengers}
-              price={car.price}
+              imageURL={car.imageURL}
             />
           </div>
         ))}
