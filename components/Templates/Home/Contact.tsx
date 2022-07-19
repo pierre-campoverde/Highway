@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="text-center my-4 px-2">
         <AltHeading label="COMO CONTACTARNOS?" />
         <Subheading
-          redText="sobre la renta de coches"
+          redText="sobre la renta de autos"
           blackText="Contáctanos y consúltanos"
         />
       </div>

@@ -17,7 +17,7 @@ const Catalogo: NextPage = () => {
           <AltHeading label="CATALOGO" />
           <Subheading
             blackText="Conoce nuestros "
-            redText="coches disponibles."
+            redText="autos disponibles."
           />
           <Body content="¿Estás listo para comenzar tu viaje?" />
         </div>

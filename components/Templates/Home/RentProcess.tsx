@@ -13,7 +13,7 @@ const RentProcess = () => {
       <div className="text-center my-4 px-2">
         <AltHeading label="COMO RENTAR" />
         <Subheading redText="rapido" blackText="Proceso agil y " />
-        <Body content="Renta tu coche en 3 sencillos pasos" />
+        <Body content="Renta tu auto en 3 sencillos pasos" />
       </div>
       <div className="flex flex-wrap m-2 justify-center">
         <StepCard

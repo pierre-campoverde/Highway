@@ -9,11 +9,8 @@ const Catalog = () => {
   return (
     <section className="container mx-auto py-10">
       <div className="text-center  my-4 px-2">
-        <AltHeading label="NUESTROS COCHES" />
-        <Subheading
-          redText="coches disponibles."
-          blackText="Conoce nuestros "
-        />
+        <AltHeading label="NUESTROS AUTOS" />
+        <Subheading redText="autos disponibles." blackText="Conoce nuestros " />
 
         <Body content="¿Estás listo para comenzar tu viaje?" />
       </div>
