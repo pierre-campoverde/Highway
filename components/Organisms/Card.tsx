@@ -36,7 +36,13 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
         <div className="flex my-2">
           <CarProp propName="Combustible" value={fuel} />
         </div>
-        <Button type="secondary" label="Rentar" />
+        <a
+          href={`https://wa.me/529981402018?text=Hola,%20quisiera%20rentar%20un%20${model}.`}
+          className="text-white bg-customBlue p-2 text-2xl font-gillSansRegular rounded-xl
+        hover:bg-gray-200 hover:text-customBlue hover:shadow-lg transition-all text-center"
+        >
+          Rentar
+        </a>
       </div>
     </div>
   );
