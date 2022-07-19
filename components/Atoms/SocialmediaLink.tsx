@@ -24,6 +24,8 @@ const SocialMediaButton = ({ platform, to }: Props) => {
     <a
       href={to}
       className="bg-white mx-2 w-12 h-12 flex items-center justify-center p-2 text-customRed text-4xl rounded-xl hover:bg-gray-200 cursor-pointer"
+      target={"_blank"}
+      rel="noreferrer"
     >
       {platformIcon(platform)}
     </a>
