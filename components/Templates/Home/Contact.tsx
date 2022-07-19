@@ -37,7 +37,10 @@ const Contact = () => {
           </div>
           <div className="flex justify-center my-2">
             <SocialMediaButton platform="instagram" to="" />
-            <SocialMediaButton platform="facebook" to="" />
+            <SocialMediaButton
+              platform="facebook"
+              to="https://www.facebook.com/Highway-Car-Rental-100672316060675"
+            />
             <SocialMediaButton platform="twitter" to="" />
           </div>
           <div className="w-full mx-auto  ">
