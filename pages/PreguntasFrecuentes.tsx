@@ -6,7 +6,7 @@ import Question from "components/Molecules/Question";
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-
+import Maintanance from "../components/Templates/Maintanance";
 const PreguntasFrecuentes: NextPage = () => {
   return (
     <Layout>
@@ -14,7 +14,7 @@ const PreguntasFrecuentes: NextPage = () => {
         <title>FAQ | Highway</title>
       </Head>
       <main className="min-h-screen">
-        <div className="text-center my-4 px-2">
+        {/* <div className="text-center my-4 px-2">
           <AltHeading label="COMO RENTAR" />
           <Subheading redText="rapido" blackText="Proceso agil y " />
           <Body content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, a?" />
@@ -40,7 +40,8 @@ const PreguntasFrecuentes: NextPage = () => {
             question="Como reservar?"
             answer="ftcgvhbdasjdasjndnasdsd"
           />
-        </div>
+        </div> */}
+        <Maintanance />
       </main>
     </Layout>
   );
