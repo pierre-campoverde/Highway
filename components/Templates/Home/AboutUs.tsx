@@ -10,7 +10,7 @@ const AboutUs = () => {
           y forjando una lealtad incomparable de parte de los clientes”.
         </p>
         <div className="w-44 my-3 mx-auto">
-          <Link href={"/"}>
+          <Link href={"/AboutUs"}>
             <a className="border-2 mt-2 block text-xl px-2 py-3  text-white rounded-xl hover:bg-white hover:text-customRed transition-all">
               Sobre Nosotros
             </a>

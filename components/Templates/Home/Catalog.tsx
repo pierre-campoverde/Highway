@@ -1,9 +1,9 @@
 import AltHeading from "components/Atoms/AltHeading";
 import Body from "components/Atoms/Body";
-import Button from "components/Atoms/Button";
 import Subheading from "components/Atoms/Subheading";
 import React from "react";
 import Slider from "components/Organisms/Slider";
+import Link from "next/link";
 
 const Catalog = () => {
   return (
@@ -11,8 +11,8 @@ const Catalog = () => {
       <div className="text-center  my-4 px-2">
         <AltHeading label="NUESTROS COCHES" />
         <Subheading
-          redText="coches disponibles."
           blackText="Conoce nuestros "
+          redText="coches disponibles."
         />
 
         <Body content="¿Estás listo para comenzar tu viaje?" />
@@ -20,7 +20,11 @@ const Catalog = () => {
       <Slider />
       <div className="flex justify-center w-7/12 sm:w-2/12 mx-auto mt-5">
         {/* //TODO:Set action */}
-        <Button type="terciary" label="Ver mas" />
+        <Link href={"/Catalogo"}>
+          <a className="border-2 text-customBlue border-customBlue rounded-xl py-3 text-xl px-4  hover:shadow-xl">
+            Ver mas
+          </a>
+        </Link>
       </div>
     </section>
   );
