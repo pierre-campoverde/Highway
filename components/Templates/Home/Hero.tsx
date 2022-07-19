@@ -25,7 +25,7 @@ const Hero = () => {
           className="container"
         >
           <Heading
-            blackText="Renta un coche de forma"
+            blackText="Renta un auto de forma"
             redText="fácil, rápida y personalizada."
           />
           <div className="my-2">
