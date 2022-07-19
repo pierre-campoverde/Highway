@@ -21,7 +21,12 @@ const Contact = () => {
       <div className="flex flex-col items-center text-center sm:flex-row sm:text-left lg:w-8/12 mx-auto ">
         <div className="flex px-3  flex-col w-11/12 md:w-5/12 mx-auto ">
           <div className="flex-col">
-            <ContactInfo href="tel:555-555-555" label="555-555-555">
+            <ContactInfo href="tel:+529981617696" label="+52-998-161-7696">
+              <span className="text-customRed text-3xl">
+                <AiFillPhone />
+              </span>
+            </ContactInfo>
+            <ContactInfo href="tel:+529981402018" label="+52-998-140-2018">
               <span className="text-customRed text-3xl">
                 <AiFillPhone />
               </span>
