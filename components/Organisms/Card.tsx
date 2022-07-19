@@ -30,7 +30,7 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
       <div className="w-full flex flex-col p-3 rounded-xl bg-white">
         <p className="text-xl font-semibold">{model}</p>
         <div className="flex w-9/12 justify-between my-2">
-          <CarProp propName="Transmision" value={transmision} />
+          <CarProp propName="Transmisión" value={transmision} />
           <CarProp propName="Pasajeros" value={passengers.toString()} />
         </div>
         <div className="flex my-2">

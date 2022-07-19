@@ -18,7 +18,7 @@ module.exports = {
         customGray: "#54565a",
       },
       backgroundImage: {
-        heroImage: "url(../public/Hero.png)",
+        AboutUsImage: "url(../public/AboutUs.png)",
       },
     },
   },

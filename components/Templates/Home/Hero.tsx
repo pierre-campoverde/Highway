@@ -24,12 +24,15 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="container"
         >
-          <Heading blackText="Highway" redText="car rental" />
+          <Heading
+            blackText="Renta un coche de forma"
+            redText="fácil, rápida y personalizada."
+          />
           <div className="my-2">
             <p className="text-2xl text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              animi, officia illo vitae asperiores sed explicabo ipsum veniam.
-              Doloremque, facilis!
+              Somo tu solución rápida y sin trabas para rentar un coche en
+              Cancún. Adquiérelo en cualquier momento de forma fácil y
+              personalizada y ¡Disfruta de tu viaje!
             </p>
           </div>
 

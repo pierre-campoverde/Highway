@@ -1,3 +1,4 @@
+import AboutUs from "components/Templates/Home/AboutUs";
 import Catalog from "components/Templates/Home/Catalog";
 import Contact from "components/Templates/Home/Contact";
 import Hero from "components/Templates/Home/Hero";
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
         <RentProcess />
         <Catalog />
         <Services />
-
+        <AboutUs />
         <Contact />
       </main>
     </Layout>
