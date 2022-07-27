@@ -16,16 +16,19 @@ const Footer = () => {
           <nav>
             <ul>
               <li className="my-4 ">
-                <FooterLink to="" label="Politica de renta" />
+                <FooterLink to="/PoliticasRenta" label="Politica de renta" />
               </li>
               <li className="my-4 ">
-                <FooterLink to="" label="Preguntas frecuentes" />
+                <FooterLink
+                  to="/PreguntasFrecuentes"
+                  label="Preguntas frecuentes"
+                />
               </li>
               <li className="my-4 ">
-                <FooterLink to="" label="Contacto" />
+                <FooterLink to="/Contacto" label="Contacto" />
               </li>
               <li className="my-4 ">
-                <FooterLink to="" label="Sobre nosotros" />
+                <FooterLink to="/AboutUs" label="Sobre nosotros" />
               </li>
             </ul>
           </nav>
