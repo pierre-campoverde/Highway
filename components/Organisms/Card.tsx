@@ -38,7 +38,7 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
           <CarProp propName="Combustible" value={fuel} />
         </div>
         <a
-          href={`https://wa.me/529981402018?text=Hola,%20quisiera%20rentar%20un%20${model}.`}
+          href={`https://wa.me/529981225203?text=Hola,%20quisiera%20rentar%20un%20${model}.`}
           className="text-white bg-customBlue p-2 text-2xl font-gillSansRegular rounded-xl
         hover:bg-gray-200 hover:text-customBlue hover:shadow-lg transition-all text-center"
         >
