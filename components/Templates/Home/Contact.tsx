@@ -11,10 +11,10 @@ const Contact = () => {
   return (
     <section className="container mx-auto py-10">
       <div className="text-center my-4 px-2">
-        <AltHeading label="COMO CONTACTARNOS?" />
+        <AltHeading label="¿COMO CONTACTARNOS?" />
         <Subheading
           redText="sobre la renta de autos"
-          blackText="Contáctanos y consúltanos"
+          blackText="Contáctanos y consulta"
         />
       </div>
 
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="form w-11/12 md:w-5/12 mx-auto text-center">
-          <p className="text-lg text-zinc-500">O envianos un mail</p>
+          <p className="text-lg text-zinc-500">O envíanos un mail</p>
           <ContactForm />
         </div>
       </div>

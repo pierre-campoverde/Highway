@@ -16,7 +16,7 @@ const Footer = () => {
           <nav>
             <ul>
               <li className="my-4 ">
-                <FooterLink to="/PoliticasRenta" label="Politica de renta" />
+                <FooterLink to="/PoliticasRenta" label="Política de renta" />
               </li>
               <li className="my-4 ">
                 <FooterLink

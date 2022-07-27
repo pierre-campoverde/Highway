@@ -8,7 +8,7 @@ const PoliticasRenta: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Politicas de renta | Highway</title>
+        <title>Políticas de renta | Highway</title>
       </Head>
       <main className="min-h-screen mx-auto container">
         <section className="py-5 divide-y-2 ">

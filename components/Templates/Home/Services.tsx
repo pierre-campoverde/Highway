@@ -19,7 +19,7 @@ const Services = () => {
             blackText="Servicios orientados a la"
             redText="comodidad y seguridad del cliente "
           />
-          <Body content="Todos los servicios estan incluidos sin ningun costo adicional." />
+          <Body content="Todos los servicios están incluidos sin ningún costo adicional." />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4  mx-auto sm:mx-0">
           <ServiceCard label="Sin cargos ocultos">

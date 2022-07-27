@@ -30,7 +30,7 @@ const Navbar = () => {
             <li className="m-4">
               <Navlink
                 size="text-xl"
-                label="Politicas de renta"
+                label="Políticas de renta"
                 to="/PoliticasRenta"
               />
             </li>

@@ -19,7 +19,7 @@ const Catalog = () => {
         {/* //TODO:Set action */}
         <Link href={"/Catalogo"}>
           <a className="border-2 text-customBlue border-customBlue rounded-xl py-3 text-xl px-4  hover:shadow-xl">
-            Ver mas
+            Ver más
           </a>
         </Link>
       </div>

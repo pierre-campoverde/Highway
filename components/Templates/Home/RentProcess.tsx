@@ -11,8 +11,8 @@ const RentProcess = () => {
   return (
     <section className="mx-auto container py-10">
       <div className="text-center my-4 px-2">
-        <AltHeading label="COMO RENTAR" />
-        <Subheading redText="rapido" blackText="Proceso agil y " />
+        <AltHeading label="¿COMO RENTAR?" />
+        <Subheading redText="rápido" blackText="Proceso ágil y " />
         <Body content="Renta tu auto en 3 sencillos pasos" />
       </div>
       <div className="flex flex-wrap m-2 justify-center">
@@ -23,7 +23,7 @@ const RentProcess = () => {
           <AiOutlineWhatsApp />
         </StepCard>
         <StepCard
-          title="Presenta tu documentacion"
+          title="Presenta tu documentación"
           description="Presenta tus documentos y metodos de pago."
         >
           <IoDocuments />
