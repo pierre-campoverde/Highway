@@ -12,9 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         auth: {
             user: process.env.SMTP_USER,
             pass: process.env.SMTP_PASSWORD,
-
         }
-
     });
     try {
         await transporter.sendMail({
