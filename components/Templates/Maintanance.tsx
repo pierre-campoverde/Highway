@@ -15,12 +15,12 @@ const Maintanance = () => {
       </div>
       <div className="text-center mt-10">
         <h2 className="font-gillSansBold text-4xl text-customRed text-center">
-          Pagina bajo construcción.
+          Pagina en construcción.
         </h2>
         <p className="text-lg">
           En caso de necesitar soporte{" "}
           <Link href={"/Contacto"}>
-            <a className="underline underline-offset-4 ">contactanos</a>
+            <a className="underline underline-offset-4 ">contáctanos</a>
           </Link>
         </p>
       </div>

@@ -33,9 +33,14 @@ const Footer = () => {
             </ul>
           </nav>
           <div className="border flex justify-center">
-            <SocialMediaButton platform="instagram" to="" />
-            <SocialMediaButton platform="facebook" to="" />
-            <SocialMediaButton platform="twitter" to="" />
+            <SocialMediaButton
+              platform="instagram"
+              to="https://instagram.com/highwaycar_rental?igshid=YmMyMTA2M2Y="
+            />
+            <SocialMediaButton
+              platform="facebook"
+              to="https://www.facebook.com/Highway-Car-Rental-103187419157524/"
+            />
           </div>
         </div>
       </div>

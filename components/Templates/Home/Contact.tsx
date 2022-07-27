@@ -41,14 +41,16 @@ const Contact = () => {
             </ContactInfo>
           </div>
           <div className="flex justify-center my-2">
-            <SocialMediaButton platform="instagram" to="" />
+            <SocialMediaButton
+              platform="instagram"
+              to="https://instagram.com/highwaycar_rental?igshid=YmMyMTA2M2Y="
+            />
             <SocialMediaButton
               platform="facebook"
-              to="https://www.facebook.com/Highway-Car-Rental-100672316060675"
+              to="https://www.facebook.com/Highway-Car-Rental-103187419157524/"
             />
-            <SocialMediaButton platform="twitter" to="" />
           </div>
-          <div className="w-full mx-auto  ">
+          <div className="w-full mx-auto">
             <WhatsappButton />
           </div>
         </div>
