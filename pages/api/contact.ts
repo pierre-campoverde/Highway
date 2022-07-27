@@ -14,10 +14,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
             pass: process.env.SMTP_PASSWORD,
         }
     });
+    console.log(process.env.SMTP_USER, process.env.SMTP_PASSWORD);
     try {
         await transporter.sendMail({
             from: Email,
-            to: "jpcezzane@gmail.com",
+            to: "highwaycarrentalcancun@gmail.com",
             subject: "Highway Car Rental | Website Contact",
             html: ` 
             <p><strong>Name:</strong>${Nombre}</p></br>

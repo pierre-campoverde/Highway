@@ -15,6 +15,7 @@ const Hero = () => {
           width={371}
           height={440}
           alt="Hero image"
+          priority
         />
       </div>
       <div className="sm:w-5/12 p-5  align-center rounded-2xl transform -translate-y-10 sm:translate-y-0 bg-white">

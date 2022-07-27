@@ -25,6 +25,7 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
           layout="responsive"
           width={213}
           height={160}
+          unoptimized
         />
       </div>
       <div className="w-full flex flex-col p-3 rounded-xl bg-white">
