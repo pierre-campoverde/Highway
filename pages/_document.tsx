@@ -17,6 +17,7 @@ const Document = () => {
 
   gtag('config', 'G-C5LPSE2YH1');`}
         </Script>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <body>
         <Main />
