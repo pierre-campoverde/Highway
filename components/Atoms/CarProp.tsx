@@ -6,8 +6,8 @@ type Prop = {
 const CarProp = ({ propName, value }: Prop) => {
   return (
     <div>
-      <p className="text-xs font-semibold">{propName}</p>
-      <p className="text-gray-700">{value}</p>
+      <span className="text-xs font-semibold">{propName}</span>
+      <span className="text-gray-700">{value}</span>
     </div>
   );
 };
