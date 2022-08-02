@@ -21,7 +21,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; script-src 'self'; img-src 'self' https://ucarecdn.com; style-src: *; frame-src *.google.com;",
+              "default-src 'self'; script-src 'self'; img-src *; style-src: *; frame-src *.google.com;",
           },
         ],
       },
