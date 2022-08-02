@@ -20,7 +20,8 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self'; img-src *;",
+            value:
+              "default-src 'self'; script-src 'self'; img-src data:'self' *;",
           },
         ],
       },
