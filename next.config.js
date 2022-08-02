@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const ContentSecurityPolicy = `
-default-src 'self';
-script-src 'self';
-child-src 'none';
-style-src 'self' example.com;
-img-src https://*;
-font-src 'self'; 
-`;
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -16,7 +8,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/:path*",
+        source: "/(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
