@@ -21,7 +21,7 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
           loading="lazy"
           loader={() => imageURL}
           src={imageURL}
-          alt={model + " to rent in Cancun"}
+          alt={"Rentar un " + model}
           layout="responsive"
           width={213}
           height={160}
