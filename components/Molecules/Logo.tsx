@@ -6,7 +6,12 @@ const Logo = () => {
   return (
     <Link href="/">
       <a className="flex items-center">
-        <Image src={"/Logo.svg"} alt="Highway Logo" width={70} height={70} />
+        <Image
+          src={"/LOGO.png"}
+          alt="Highway Car Rental Cancun"
+          width={70}
+          height={70}
+        />
         <div>
           <span className="text-customBlue font-gillSansRegular text-xl">
             Highway
