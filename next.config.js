@@ -21,7 +21,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; script-src 'self'; img-src data:'self' *;",
+              "default-src 'self'; script-src 'self'; img-src 'self' *; style-src: *;",
           },
         ],
       },
