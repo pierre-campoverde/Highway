@@ -16,8 +16,14 @@ const nextConfig = {
   async headers() {
     return [
       {
-        key: "Content-Security-Policy",
-        value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; img-src: 'self' 'https://ucarecdn.com/'; script-src 'self';  ",
+          },
+        ],
       },
     ];
   },
