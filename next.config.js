@@ -12,7 +12,6 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["ucarecdn.com"],
-    ContentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   async headers() {
     return [
@@ -22,7 +21,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; script-src 'self'; img-src 'self' https://ucarecdn.com; style-src: *;",
+              "default-src 'self'; script-src 'self'; img-src 'self' https://ucarecdn.com; style-src: *; frame-src *.google.com;",
           },
         ],
       },
