@@ -12,7 +12,7 @@ const RentProcess = () => {
     <section className="mx-auto container py-10">
       <div className="text-center my-4 px-2">
         <AltHeading label="¿COMO RENTAR?" />
-        <Subheading redText="rápido" blackText="Proceso ágil y " />
+        <Subheading redText="rápido" blackText="Proceso fácil y " />
         <Body content="Renta tu auto en 3 sencillos pasos" />
       </div>
       <div className="flex flex-wrap m-2 justify-center">

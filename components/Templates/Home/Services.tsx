@@ -16,10 +16,10 @@ const Services = () => {
         <div className="text-center sm:w-4/12 m-4 px-2  sm:text-left  block">
           <AltHeading label="NUESTROS SERVICIOS" />
           <Subheading
-            blackText="Servicios orientados a la"
-            redText="comodidad y seguridad del cliente "
+            blackText="Está orientado a la comodidad y "
+            redText="seguridad de nuestros clientes."
           />
-          <Body content="Todos los servicios están incluidos sin ningún costo adicional." />
+          <Body content="Accede a estos servicios sin ningún costo adicional." />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4  mx-auto sm:mx-0">
           <ServiceCard label="Sin cargos ocultos">

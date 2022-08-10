@@ -3,9 +3,9 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { motion } from "framer-motion";
 type Props = {
   question: string;
-  answer: string;
+  children: JSX.Element | JSX.Element[];
 };
-const Question = ({ question, answer }: Props) => {
+const Question = ({ question, children }: Props) => {
   const [open, setOpen] = useState(false);
   const toggleAnswer = () => {
     setOpen(!open);
@@ -22,9 +22,7 @@ const Question = ({ question, answer }: Props) => {
           <MdKeyboardArrowDown />
         </p>
       </div>
-      <div className={`p-4 ${open ? "block" : "hidden"}`}>
-        <p>{answer}</p>
-      </div>
+      <div className={`p-4 ${open ? "block" : "hidden"}`}>{children}</div>
     </motion.div>
   );
 };
