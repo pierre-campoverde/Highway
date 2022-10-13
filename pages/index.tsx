@@ -16,11 +16,10 @@ const Home: NextPage = () => {
         </title>
         <meta
           name="description"
-          content="Alquiler de autos en Cancún, México. Renta un coche fácil y rapido. Disfruta
-          de tus vacaciones de una forma segura en nuestros autos último modelo.
-          Te ofrecemos los mejores precios, con seguro incluido y sin cargos
-          ocultos."
+          content="Renta un coche fácil y rápido en Cancun. Disfruta de tus vacaciones de una forma segura en nuestros autos último modelo a los mejores precios.
+          "
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Head>
       <main className="">
