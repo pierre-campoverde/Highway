@@ -32,7 +32,7 @@ const Contact = () => {
               </span>
             </ContactInfo>
             <ContactInfo
-              href="https://goo.gl/maps/ZrxAkbc6J2P3K8AF9"
+              href="https://goo.gl/maps/D8G74SMNdBqKhvRK8"
               label="Carr. Tulum-Cancun 102a"
             >
               <span className="text-customRed text-3xl">
