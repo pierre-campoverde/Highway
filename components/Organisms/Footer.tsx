@@ -46,7 +46,17 @@ const Footer = () => {
       </div>
 
       <div className="w-full bg-customRed text-center p-4">
-        <p className="text-white">Copyright 2022 © All rights reserved</p>
+        <span className="text-white">
+          Copyright 2022 © All rights reserved | Made by{" "}
+          <a
+            href="https://www.pierre-c.com/"
+            target={"_blank"}
+            rel="noreferrer"
+            className="font-medium"
+          >
+            Pierre Campoverde 🤝
+          </a>
+        </span>
       </div>
     </footer>
   );

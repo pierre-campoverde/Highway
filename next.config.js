@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     domains: ["ucarecdn.com"],
   },
+  i18n: {
+    locales: ["en-US", "es-ES"],
+    defaultLocale: "es-ES",
+  },
   // async headers() {
   //   return [
   //     {

@@ -6,8 +6,10 @@ import RentProcess from "components/Templates/Home/RentProcess";
 import Services from "components/Templates/Home/Services";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 const Home: NextPage = () => {
+  const { locale } = useRouter();
   return (
     <Layout>
       <Head>

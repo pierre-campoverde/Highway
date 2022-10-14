@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  console.log(router.locale);
   useEffect(() => {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
     fbq.pageview();
