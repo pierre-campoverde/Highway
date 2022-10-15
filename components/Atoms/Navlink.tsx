@@ -1,6 +1,7 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 type Props = {
   label: string;
@@ -8,12 +9,21 @@ type Props = {
   size: "text-xl" | "text-lg" | "text-2xl";
 };
 const Navlink = ({ to, label, size }: Props) => {
+  const { pathname } = useRouter();
+
+  if (pathname === `/${to}`) {
+    console.log(pathname, to);
+  }
+
   return (
     <Link href={to}>
       <a
-        className={`font-gillSansRegular block w-full ${size} p-2 text-gray-500 hover:text-customBlue `}
+        className={`link block link_leda font-gillSansRegular ${size} ${
+          pathname === to ? "text-red-600" : "text-gray-900"
+        }`}
+        data-text={label}
       >
-        {label}
+        <span>{label}</span>
       </a>
     </Link>
   );

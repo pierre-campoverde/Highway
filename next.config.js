@@ -5,10 +5,12 @@ const nextConfig = {
   images: {
     domains: ["ucarecdn.com"],
   },
-  i18n: {
-    locales: ["en-US", "es-ES"],
-    defaultLocale: "es-ES",
-  },
+  //TODO: Add multilanguage support.
+  // i18n: {
+  //   locales: ["en", "es"],
+  //   defaultLocale: "es",
+  // },
+
   // async headers() {
   //   return [
   //     {
