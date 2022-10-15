@@ -10,11 +10,6 @@ type Props = {
 };
 const Navlink = ({ to, label, size }: Props) => {
   const { pathname } = useRouter();
-
-  if (pathname === `/${to}`) {
-    console.log(pathname, to);
-  }
-
   return (
     <Link href={to}>
       <a
