@@ -3,7 +3,7 @@ import React from "react";
 
 const PoliciesSection = () => {
   return (
-    <section className="py-5 divide-y-2  w-full sm:w-8/12   ">
+    <section className="py-5 w-full sm:w-8/12   ">
       <RentPoint topic="Politicas de pago">
         <p>
           Se Requiere una tarjeta de crédito válida al momento de firmar

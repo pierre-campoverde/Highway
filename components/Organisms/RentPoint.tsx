@@ -5,7 +5,7 @@ type Props = {
 };
 const RentPoint = ({ topic, children }: Props) => {
   return (
-    <div className="py-3 my-2 w-11/12  border mx-auto ">
+    <div className="py-3 my-2 w-11/12  mx-auto ">
       <h2 className="font-medium text-2xl">{topic}</h2>
       <ul>
         {children.map((point) => (

@@ -12,7 +12,7 @@ const PoliticasRenta: NextPage = () => {
       <Head>
         <title>Políticas de renta | Highway</title>
       </Head>
-      <main className="min-h-screen mx-auto sm:flex container border">
+      <main className="min-h-screen mx-auto sm:flex container">
         <PoliciesSection />
         <ContactAside />
       </main>
