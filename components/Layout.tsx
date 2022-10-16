@@ -1,4 +1,5 @@
 import React from "react";
+import { LanguageButton } from "./Molecules/LanguageButton";
 import Footer from "./Organisms/Footer";
 import Navbar from "./Organisms/Navbar";
 type Props = {
@@ -9,6 +10,7 @@ const Layout = ({ children }: Props) => {
     <>
       <Navbar />
       {children}
+      <LanguageButton />
       <Footer />
     </>
   );

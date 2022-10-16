@@ -6,10 +6,10 @@ const nextConfig = {
     domains: ["ucarecdn.com"],
   },
   //TODO: Add multilanguage support.
-  // i18n: {
-  //   locales: ["en", "es"],
-  //   defaultLocale: "es",
-  // },
+  i18n: {
+    locales: ["en-US", "es-ES"],
+    defaultLocale: "es-ES",
+  },
 
   // async headers() {
   //   return [

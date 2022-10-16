@@ -10,7 +10,7 @@ const RentPoint = ({ topic, children }: Props) => {
       <ul>
         {children.map((point) => (
           <li
-            className="my-3  text-xl md:text-base p-3 rounded-xl text-gray-700"
+            className=" text-xl md:text-base my-2 rounded-xl text-gray-700"
             key={children.indexOf(point)}
           >
             {point}
