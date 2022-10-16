@@ -14,7 +14,7 @@ const Navlink = ({ to, label, size }: Props) => {
     <Link href={to}>
       <a
         className={`link block link_leda font-gillSansRegular ${size} ${
-          pathname === to ? "text-red-600" : "text-gray-900"
+          pathname === to ? "text-red-600" : "text-gray-500"
         }`}
         data-text={label}
       >
