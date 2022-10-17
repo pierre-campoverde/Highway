@@ -2,31 +2,34 @@ import Button from "components/Atoms/Button";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { MdLanguage, MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { motion } from "framer-motion";
+import Link from "next/link";
 export const LanguageButton = () => {
   const [open, setopen] = useState(false);
   const changeVisibility = () => {
     setopen(!open);
   };
-  const { locale } = useRouter();
-  const { locales } = useRouter();
+
+  const { locales, locale, pathname } = useRouter();
   return (
     <div className="fixed right-10 bottom-10 ">
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: -1 }}
+        animate={{ opacity: 1, y: 0 }}
         className={`p-2 border rounded-2xl my-1 bg-white ${
           open ? "block" : "hidden"
         }`}
       >
         {locales?.map((loc) => {
           return (
-            <button
-              key={loc}
-              className="w-full py-2 hover:bg-blue-100 rounded-2xl"
-            >
-              {loc}
-            </button>
+            <Link href={pathname} locale={loc} key={loc}>
+              <a className="w-full block text-center cursor-pointer py-2 hover:bg-blue-100 rounded-2xl">
+                {loc}
+              </a>
+            </Link>
           );
         })}
-      </div>
+      </motion.div>
       <button
         onClick={(e) => {
           e.preventDefault();
