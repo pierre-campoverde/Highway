@@ -1,6 +1,8 @@
 import React from "react";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { useIntl } from "react-intl";
 const WhatsappButton = () => {
+  const intl = useIntl();
   return (
     <a
       className="flex shadow-2xl shadow-rose-700 transition-all items-center font-gillSansRegular justify-center h-14 text-2xl p-2 w-full rounded-xl text-white bg-customRed hover:bg-rose-700"
@@ -11,7 +13,7 @@ const WhatsappButton = () => {
       <span className="text-4xl mr-2">
         <AiOutlineWhatsApp />
       </span>
-      CONTACTAR
+      {intl.formatMessage({ id: "component.button.whatsapp" }).toUpperCase()}
     </a>
   );
 };

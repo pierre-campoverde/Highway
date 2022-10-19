@@ -1,8 +1,13 @@
 {
+    "page.home.head.title": "Highway Car Rental| Rent a car in Cancún quick and easy",
+    "page.home.head.meta.description": "",
     "layout.navbar.link.home": "Inicio",
     "layout.navbar.link.catalog": "Catalogo",
     "layout.navbar.link.contact": "Contacto",
     "layout.navbar.link.policies": "Politicas de renta",
     "layout.navbar.link.faq": "FAQ",
-    "name": "nameExample"
+    "page.home.title-black": "Renta un auto de forma",
+    "page.home.title-red": "fácil, rápida y a un precio competitivo.",
+    "page.home.description": "Somos tu solución rápida y sin trabas para rentar un auto en Cancún. Adquiérelo en cualquier momento de forma fácil y personalizada. ¡Disfruta de tu viaje!",
+    "component.button.whatsapp": "Contactar"
 }

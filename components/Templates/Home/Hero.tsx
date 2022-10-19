@@ -5,7 +5,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import WhatsappButton from "components/Atoms/WhatsappButton";
+import { useIntl } from "react-intl";
 const Hero = () => {
+  const intl = useIntl();
   return (
     <section className="sm:flex sm:my-20 h-auto justify-center items-center ">
       <motion.div
@@ -36,9 +38,7 @@ const Hero = () => {
           />
           <div className="my-2">
             <p className="text-2xl text-gray-500">
-              Somos tu solución rápida y sin trabas para rentar un auto en
-              Cancún. Adquiérelo en cualquier momento de forma fácil y
-              personalizada. ¡Disfruta de tu viaje!
+              {intl.formatMessage({ id: "page.home.description" })}
             </p>
           </div>
 
