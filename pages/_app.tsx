@@ -3,22 +3,42 @@ import type { AppProps } from "next/app";
 import Script from "next/script";
 import * as fbq from "../utils/fbPixel";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
+import { IntlProvider } from "react-intl";
+import en from "../content/en.json";
+import es from "../content/es.json";
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
+  const { events, locale } = useRouter();
+
+  const messages = useMemo(() => {
+    const spanish = {
+      ...es,
+    };
+    const english = {
+      ...en,
+    };
+    switch (locale) {
+      case "en":
+        return english;
+      case "es":
+        return spanish;
+      default:
+        return spanish;
+    }
+  }, [locale]);
+
   useEffect(() => {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
     fbq.pageview();
-
     const handleRouteChange = () => {
       fbq.pageview();
     };
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+    events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
+      events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [events]);
   return (
     <>
       <Script
@@ -39,8 +59,13 @@ fbq('track', 'PageView');
 `,
         }}
       />
-
-      <Component {...pageProps} />
+      <IntlProvider
+        locale={locale ? locale : "es"}
+        defaultLocale="es"
+        messages={messages}
+      >
+        <Component {...pageProps} />
+      </IntlProvider>
     </>
   );
 }

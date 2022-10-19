@@ -1,1 +1,8 @@
-{}
+{
+    "layout.navbar.link.home": "Inicio",
+    "layout.navbar.link.catalog": "Catalogo",
+    "layout.navbar.link.contact": "Contacto",
+    "layout.navbar.link.policies": "Politicas de renta",
+    "layout.navbar.link.faq": "FAQ",
+    "name": "nameExample"
+}

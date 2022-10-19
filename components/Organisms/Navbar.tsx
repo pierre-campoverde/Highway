@@ -19,23 +19,35 @@ const Navbar = () => {
           <Logo />
           <ul className="hidden md:flex">
             <li className="m-4">
-              <Navlink size="text-xl" label="Inicio" to="/" />
-            </li>
-            <li className="m-4">
-              <Navlink size="text-xl" label="Catalogo" to="/Catalogo" />
-            </li>
-            <li className="m-4">
-              <Navlink size="text-xl" label="Contacto" to="/Contacto" />
+              <Navlink size="text-xl" id="layout.navbar.link.home" to="/" />
             </li>
             <li className="m-4">
               <Navlink
                 size="text-xl"
-                label="Políticas de renta"
+                id="layout.navbar.link.catalog"
+                to="/Catalogo"
+              />
+            </li>
+            <li className="m-4">
+              <Navlink
+                size="text-xl"
+                id="layout.navbar.link.contact"
+                to="/Contacto"
+              />
+            </li>
+            <li className="m-4">
+              <Navlink
+                size="text-xl"
+                id="layout.navbar.link.policies"
                 to="/PoliticasRenta"
               />
             </li>
             <li className="m-4">
-              <Navlink size="text-xl" label="FAQ" to="/PreguntasFrecuentes" />
+              <Navlink
+                size="text-xl"
+                id="layout.navbar.link.faq"
+                to="/PreguntasFrecuentes"
+              />
             </li>
           </ul>
           <NavButton callback={toggleMenu} />

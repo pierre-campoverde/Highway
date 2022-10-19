@@ -7,8 +7,8 @@ const nextConfig = {
   },
   //TODO: Add multilanguage support.
   i18n: {
-    locales: ["en-US", "es-ES"],
-    defaultLocale: "es-ES",
+    locales: ["en", "es"],
+    defaultLocale: "es",
   },
 
   // async headers() {

@@ -23,8 +23,8 @@ export const LanguageButton = () => {
         {locales?.map((loc) => {
           return (
             <Link href={pathname} locale={loc} key={loc}>
-              <a className="w-full block text-center cursor-pointer py-2 hover:bg-blue-100 rounded-2xl">
-                {loc}
+              <a className="w-full block text-center cursor-pointer p-2 hover:bg-blue-100 rounded-2xl">
+                {loc === "en" ? "English" : "Español"}
               </a>
             </Link>
           );
@@ -40,7 +40,7 @@ export const LanguageButton = () => {
         <span className="text-3xl">
           <MdLanguage />
         </span>
-        {locale}
+        {locale === "en" ? "English" : "Español"}
         <MdOutlineKeyboardArrowUp />
       </button>
     </div>

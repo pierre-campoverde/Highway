@@ -34,23 +34,35 @@ const ResponsiveNavbar = ({ open, callback, outsideClick }: Props) => {
           </div>
           <ul className="mx-auto  w-full mt-24">
             <li className="my-6">
-              <Navlink size="text-2xl" label="Inicio" to="/" />
+              <Navlink id="layout.navbar.link.home" size="text-2xl" to="/" />
             </li>
             <li className="my-6 w-full">
-              <Navlink size="text-2xl" label="Catalogo" to="/Catalogo" />
-            </li>
-            <li className="my-6">
-              <Navlink size="text-2xl" label="Contacto" to="/Contacto" />
+              <Navlink
+                id="layout.navbar.link.home"
+                size="text-2xl"
+                to="/Catalogo"
+              />
             </li>
             <li className="my-6">
               <Navlink
+                id="layout.navbar.link.home"
                 size="text-2xl"
-                label="Politicas de renta"
+                to="/Contacto"
+              />
+            </li>
+            <li className="my-6">
+              <Navlink
+                id="layout.navbar.link.home"
+                size="text-2xl"
                 to="/PoliticasRenta"
               />
             </li>
             <li className="my-6">
-              <Navlink size="text-2xl" label="FAQ" to="/PreguntasFrecuentes" />
+              <Navlink
+                id="layout.navbar.link.home"
+                size="text-2xl"
+                to="/PreguntasFrecuentes"
+              />
             </li>
           </ul>
         </nav>

@@ -7,12 +7,14 @@ import Services from "components/Templates/Home/Services";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { FormattedMessage } from "react-intl";
 import Layout from "../components/Layout";
 const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
         <title>
+          {/* <FormattedMessage id="page.home.head.title" /> */}
           Highway Car Rental | Renta un auto en Cancún fácil y rapido.
         </title>
         <meta
