@@ -7,8 +7,10 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 import { IoDocuments } from "react-icons/io5";
 import { GiCarKey } from "react-icons/gi";
 import { useInView } from "framer-motion";
-
+import { useIntl } from "react-intl";
+import { IntlError } from "@formatjs/intl";
 const RentProcess = () => {
+  const intl = useIntl();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -21,26 +23,53 @@ const RentProcess = () => {
         }}
       >
         <div className="text-center my-4 px-2">
-          <AltHeading label="¿COMO RENTAR?" />
-          <Subheading redText="rápido" blackText="Proceso fácil y " />
-          <Body content="Renta tu auto en 3 sencillos pasos" />
+          <AltHeading
+            label={intl.formatMessage({
+              id: "page.home.rentProcess.smallTitle",
+            })}
+          />
+          <Subheading
+            redText={intl.formatMessage({
+              id: "page.home.rentProcess.tittle-red",
+            })}
+            blackText={intl.formatMessage({
+              id: "page.home.rentProcess.tittle-black",
+            })}
+          />
+          <Body
+            content={intl.formatMessage({
+              id: "page.home.rentProcess.description",
+            })}
+          />
         </div>
         <div className="flex flex-wrap m-2 justify-center">
           <StepCard
-            title="Reserva"
-            description="Contáctanos y reserva una de nuestras unidades."
+            title={intl.formatMessage({
+              id: "page.home.rentProcess.card1.title",
+            })}
+            description={intl.formatMessage({
+              id: "page.home.rentProcess.card1.text",
+            })}
           >
             <AiOutlineWhatsApp />
           </StepCard>
           <StepCard
-            title="Presenta tu documentación"
-            description="Presenta tus documentos y metodos de pago."
+            title={intl.formatMessage({
+              id: "page.home.rentProcess.card2.title",
+            })}
+            description={intl.formatMessage({
+              id: "page.home.rentProcess.card2.text",
+            })}
           >
             <IoDocuments />
           </StepCard>
           <StepCard
-            title="¡Listo para recorrer!"
-            description="Realiza una breve inspección del auto y ¡listo!"
+            title={intl.formatMessage({
+              id: "page.home.rentProcess.card3.title",
+            })}
+            description={intl.formatMessage({
+              id: "page.home.rentProcess.card3.text",
+            })}
           >
             <GiCarKey />
           </StepCard>

@@ -9,5 +9,15 @@
     "page.home.title-black": "Renta un auto de forma",
     "page.home.title-red": "fácil, rápida y a un precio competitivo.",
     "page.home.description": "Somos tu solución rápida y sin trabas para rentar un auto en Cancún. Adquiérelo en cualquier momento de forma fácil y personalizada. ¡Disfruta de tu viaje!",
+    "page.home.rentProcess.title-black": "Proceso fácil y",
+    "page.home.rentProcess.title-red": "rápido",
+    "page.home.rentProcess.smallTitle": "¿COMO RENTAR?",
+    "page.home.rentProcess.description": "Renta tu auto en 3 sencillos pasos",
+    "page.home.rentProcess.card1.title": "Reserva",
+    "page.home.rentProcess.card1.text": "Contáctanos y reserva una de nuestras unidades",
+    "page.home.rentProcess.card2.title": "Presenta tu documentación",
+    "page.home.rentProcess.card2.text": "Presenta tus documentos y metodos de pago.",
+    "page.home.rentProcess.card3.title": "¡Listo para recorrer!",
+    "page.home.rentProcess.card3.text": "Realiza una breve inspección del auto y ¡listo!",
     "component.button.whatsapp": "Contactar"
 }
