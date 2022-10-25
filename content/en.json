@@ -19,5 +19,12 @@
     "page.home.rentProcess.card2.text": "Show us your documents and payment methods.",
     "page.home.rentProcess.card3.title": "You are all set up!",
     "page.home.rentProcess.card3.text": "Make a quick review and that's it!",
-    "component.button.whatsapp": "Contact"
+    "page.home.catalog.smallTitle": "OUR CARS",
+    "page.home.catalog.tittle-black": "Check out our",
+    "page.home.catalog.tittle-red": "available cars",
+    "page.home.catalog.description": "Are you ready to start this journey?",
+    "component.button.whatsapp": "Contact",
+    "component.carCard.transmission": "Transmission",
+    "compoment.carCard.passengers": "Passengers",
+    "component.carCard.fuel": "Fuel"
 }

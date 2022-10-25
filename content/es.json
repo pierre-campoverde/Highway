@@ -19,5 +19,12 @@
     "page.home.rentProcess.card2.text": "Presenta tus documentos y metodos de pago.",
     "page.home.rentProcess.card3.title": "¡Listo para recorrer!",
     "page.home.rentProcess.card3.text": "Realiza una breve inspección del auto y ¡listo!",
+    "page.home.catalog.smallTitle": "OUR CARS",
+    "page.home.catalog.tittle-black": "Check out our",
+    "page.home.catalog.tittle-red": "available cars",
+    "page.home.catalog.description": "Are you ready to start this journey?",
+    "component.carCard.transmission": "Transmisión",
+    "compoment.carCard.passengers": "Pasajeros",
+    "component.carCard.fuel": "Combustible",
     "component.button.whatsapp": "Contactar"
 }
