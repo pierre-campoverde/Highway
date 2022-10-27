@@ -8,7 +8,6 @@ import { IoDocuments } from "react-icons/io5";
 import { GiCarKey } from "react-icons/gi";
 import { useInView } from "framer-motion";
 import { useIntl } from "react-intl";
-import { IntlError } from "@formatjs/intl";
 const RentProcess = () => {
   const intl = useIntl();
   const ref = useRef(null);

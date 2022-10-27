@@ -41,7 +41,7 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
           />
           <CarProp
             propName={intl.formatMessage({
-              id: "compoment.carCard.passengers",
+              id: "component.carCard.passengers",
             })}
             value={passengers.toString()}
           />
@@ -57,7 +57,7 @@ const Card = ({ imageURL, model, transmision, passengers, fuel }: Props) => {
           className="text-white bg-customBlue p-2 text-2xl font-gillSansRegular rounded-xl
         hover:bg-gray-200 hover:text-customBlue hover:shadow-lg transition-all text-center"
         >
-          Rentar
+          {intl.formatMessage({ id: "component.carCard.cta" })}
         </a>
       </div>
     </div>
