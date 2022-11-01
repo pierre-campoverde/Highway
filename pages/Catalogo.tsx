@@ -6,7 +6,9 @@ import CarsCatalog from "components/Templates/Catalog/CarsCatalog";
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
+import { useIntl } from "react-intl";
 const Catalogo: NextPage = () => {
+  const intl = useIntl();
   return (
     <Layout>
       <Head>
@@ -14,12 +16,16 @@ const Catalogo: NextPage = () => {
       </Head>
       <main className="">
         <div className="text-center my-4 px-2">
-          <AltHeading label="CATALOGO" />
-          <Subheading
-            blackText="Conoce nuestros "
-            redText="autos disponibles."
+          <AltHeading
+            label={intl.formatMessage({ id: "page.catalog.small-title" })}
           />
-          <Body content="¿Estás listo para comenzar tu viaje?" />
+          <Subheading
+            blackText={intl.formatMessage({ id: "page.catalog.black-title" })}
+            redText={intl.formatMessage({ id: "page.catalog.red-title" })}
+          />
+          <Body
+            content={intl.formatMessage({ id: "page.catalog.description" })}
+          />
         </div>
         <CarsCatalog />
       </main>
