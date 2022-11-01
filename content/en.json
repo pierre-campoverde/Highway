@@ -68,5 +68,7 @@
     "component.carCard.fuel": "Fuel",
     "component.contactForm.name": "Name",
     "component.contactForm.message": "Leave us a message",
-    "component.contactForm.cta": "Send"
+    "component.contactForm.cta": "Send",
+    "component.contactAside.text": "For further information about our policies contact us.",
+    "component.contactAside.button": "Contact"
 }

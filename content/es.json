@@ -68,5 +68,7 @@
     "component.button.whatsapp": "Contactar",
     "component.contactForm.name": "Nombre",
     "component.contactForm.message": "Dejanos tu mensaje",
-    "component.contactForm.cta": "Enviar"
+    "component.contactForm.cta": "Enviar",
+    "component.contactAside.text": "Para más información acerca de nuestras políticas no dudes en contactarnos.",
+    "component.contactAside.button": "Contactar"
 }
