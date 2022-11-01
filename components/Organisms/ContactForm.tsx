@@ -1,10 +1,11 @@
 import InputGroup from "components/Molecules/InputGroup";
 import TextArea from "components/Molecules/TextArea";
 import React, { useState } from "react";
+import { useIntl } from "react-intl";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({ Nombre: "", Email: "", Mensaje: "" });
-
+  const intl = useIntl();
   const [formState, setFormState] = useState({ state: "", message: "" });
   const handleChange = (
     e:
@@ -18,6 +19,7 @@ const ContactForm = () => {
   };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (inputs.Nombre && inputs.Email && inputs.Mensaje) {
       setFormState({ state: "loading", message: "" });
       try {
@@ -59,7 +61,7 @@ const ContactForm = () => {
         status={formState.state}
         callback={handleChange}
         type="text"
-        label="Nombre"
+        label={intl.formatMessage({ id: "component.contactForm.name" })}
       />
       <InputGroup
         status={formState.state}

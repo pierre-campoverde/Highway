@@ -47,7 +47,7 @@
     "component.carCard.transmission": "Transmission",
     "component.carCard.passengers": "Passengers",
     "component.carCard.fuel": "Fuel",
-    "component.contactForm.name": "Nombre",
-    "component.contactForm.message": "Dejanos tu mensaje",
-    "component.contactForm.cta": "Enviar"
+    "component.contactForm.name": "Name",
+    "component.contactForm.message": "Leave us a message",
+    "component.contactForm.cta": "Send"
 }

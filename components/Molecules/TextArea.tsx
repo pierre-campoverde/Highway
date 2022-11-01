@@ -1,9 +1,11 @@
 import React from "react";
+import { useIntl } from "react-intl";
 type Props = {
   status: string;
   callback: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 };
 const TextArea = ({ status, callback }: Props) => {
+  const intl = useIntl();
   return (
     <div className="w-full  my-2">
       <label htmlFor="Mensaje" className="hidden">
@@ -19,7 +21,9 @@ const TextArea = ({ status, callback }: Props) => {
         className="bg-gray-200 w-full border border-gray-300 rounded-lg p-4 text-lg outline-none focus:ring-2  resize-none disabled:cursor-progress disabled:opacity-50
        
     "
-        placeholder="Envianos tu mensaje"
+        placeholder={intl.formatMessage({
+          id: "component.contactForm.message",
+        })}
       ></textarea>
     </div>
   );
