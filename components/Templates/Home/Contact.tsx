@@ -6,15 +6,21 @@ import ContactInfo from "components/Molecules/ContactInfo";
 import ContactForm from "components/Organisms/ContactForm";
 import React from "react";
 import { AiFillPhone, AiTwotoneEnvironment } from "react-icons/ai";
+import { useIntl } from "react-intl";
 
 const Contact = () => {
+  const intl = useIntl();
   return (
     <section className="container mx-auto py-10">
       <div className="text-center my-4 px-2">
-        <AltHeading label="¿COMO CONTACTARNOS?" />
+        <AltHeading
+          label={intl.formatMessage({ id: "page.home.contact.smallTitle" })}
+        />
         <Subheading
-          redText="sobre la renta de autos"
-          blackText="Contáctanos y consulta"
+          redText={intl.formatMessage({ id: "page.home.contact.title-red" })}
+          blackText={intl.formatMessage({
+            id: "page.home.contact.title-black",
+          })}
         />
       </div>
 
@@ -55,7 +61,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="form w-11/12 md:w-5/12 mx-auto text-center">
-          <p className="text-lg text-zinc-500">O envíanos un mail</p>
+          <p className="text-lg text-zinc-500">
+            {intl.formatMessage({ id: "page.home.contact.sendEmailMessage" })}
+          </p>
           <ContactForm />
         </div>
       </div>

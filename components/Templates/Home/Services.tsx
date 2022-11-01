@@ -8,36 +8,62 @@ import { HiDocumentSearch } from "react-icons/hi";
 import { MdAirportShuttle } from "react-icons/md";
 import { AiFillCar, AiFillSafetyCertificate } from "react-icons/ai";
 import { FaUserClock } from "react-icons/fa";
+import { useIntl } from "react-intl";
 
 const Services = () => {
+  const intl = useIntl();
   return (
     <section className="mx-auto py-10  py-6 container">
       <div className="flex justify-center flex-col sm:flex-row">
         <div className="text-center sm:w-4/12 m-4 px-2  sm:text-left  block">
-          <AltHeading label="NUESTROS SERVICIOS" />
-          <Subheading
-            blackText="Está orientado a la comodidad y "
-            redText="seguridad de nuestros clientes."
+          <AltHeading
+            label={intl.formatMessage({
+              id: "page.home.ourServices.smallTitle",
+            })}
           />
-          <Body content="Accede a estos servicios sin ningún costo adicional." />
+          <Subheading
+            blackText={intl.formatMessage({
+              id: "page.home.ourServices.title-black",
+            })}
+            redText={intl.formatMessage({
+              id: "page.home.ourServices.title-red",
+            })}
+          />
+          <Body
+            content={intl.formatMessage({
+              id: "page.home.ourServices.description",
+            })}
+          />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4  mx-auto sm:mx-0">
-          <ServiceCard label="Sin cargos ocultos">
+          <ServiceCard
+            label={intl.formatMessage({ id: "page.home.ourServices.card1" })}
+          >
             <HiDocumentSearch />
           </ServiceCard>
-          <ServiceCard label="Forma de pago ágil y segura">
+          <ServiceCard
+            label={intl.formatMessage({ id: "page.home.ourServices.card2" })}
+          >
             <RiSecurePaymentFill />
           </ServiceCard>
-          <ServiceCard label="Recolección en el aeropuerto">
+          <ServiceCard
+            label={intl.formatMessage({ id: "page.home.ourServices.card3" })}
+          >
             <MdAirportShuttle />
           </ServiceCard>
-          <ServiceCard label="Kilometraje ilimitado">
+          <ServiceCard
+            label={intl.formatMessage({ id: "page.home.ourServices.card4" })}
+          >
             <AiFillCar />
           </ServiceCard>
-          <ServiceCard label="Cobertura amplia">
+          <ServiceCard
+            label={intl.formatMessage({ id: "page.home.ourServices.card5" })}
+          >
             <AiFillSafetyCertificate />
           </ServiceCard>
-          <ServiceCard label="Atención 24/7">
+          <ServiceCard
+            label={intl.formatMessage({ id: "page.home.ourServices.card6" })}
+          >
             <FaUserClock />
           </ServiceCard>
         </div>
