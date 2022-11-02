@@ -38,28 +38,28 @@ const ResponsiveNavbar = ({ open, callback, outsideClick }: Props) => {
             </li>
             <li className="my-6 w-full">
               <Navlink
-                id="layout.navbar.link.home"
+                id="layout.navbar.link.catalog"
                 size="text-2xl"
                 to="/Catalogo"
               />
             </li>
             <li className="my-6">
               <Navlink
-                id="layout.navbar.link.home"
+                id="layout.navbar.link.contact"
                 size="text-2xl"
                 to="/Contacto"
               />
             </li>
             <li className="my-6">
               <Navlink
-                id="layout.navbar.link.home"
+                id="layout.navbar.link.policies"
                 size="text-2xl"
                 to="/PoliticasRenta"
               />
             </li>
             <li className="my-6">
               <Navlink
-                id="layout.navbar.link.home"
+                id="layout.navbar.link.faq"
                 size="text-2xl"
                 to="/PreguntasFrecuentes"
               />
