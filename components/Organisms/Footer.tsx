@@ -3,8 +3,10 @@ import SocialMediaButton from "components/Atoms/SocialmediaLink";
 import Logo from "components/Molecules/Logo";
 import Link from "next/link";
 import React from "react";
+import { useIntl } from "react-intl";
 
 const Footer = () => {
+  const intl = useIntl();
   return (
     <footer>
       <div className="p-5 bg-gray-200">
@@ -16,19 +18,34 @@ const Footer = () => {
           <nav>
             <ul>
               <li className="my-4 ">
-                <FooterLink to="/PoliticasRenta" label="Política de renta" />
+                <FooterLink
+                  to="/PoliticasRenta"
+                  label={intl.formatMessage({
+                    id: "layout.footer.link.policies",
+                  })}
+                />
               </li>
               <li className="my-4 ">
                 <FooterLink
                   to="/PreguntasFrecuentes"
-                  label="Preguntas frecuentes"
+                  label={intl.formatMessage({ id: "layout.footer.link.faq" })}
                 />
               </li>
               <li className="my-4 ">
-                <FooterLink to="/Contacto" label="Contacto" />
+                <FooterLink
+                  to="/Contacto"
+                  label={intl.formatMessage({
+                    id: "layout.footer.link.contact",
+                  })}
+                />
               </li>
               <li className="my-4 ">
-                <FooterLink to="/AboutUs" label="Sobre nosotros" />
+                <FooterLink
+                  to="/AboutUs"
+                  label={intl.formatMessage({
+                    id: "layout.footer.link.aboutUs",
+                  })}
+                />
               </li>
             </ul>
           </nav>
