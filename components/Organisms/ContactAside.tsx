@@ -6,8 +6,8 @@ import { useIntl } from "react-intl";
 const ContactAside = () => {
   const intl = useIntl();
   return (
-    <div className="hidden sm:block w-3/12">
-      <div className="border p-3 rounded-3xl mt-12 shadow-md">
+    <div className="hidden sm:block w-3/12 ">
+      <div className="border p-3 rounded-3xl mt-12 shadow-md 2xl:w-10/12">
         <span className="text-gray-600">
           {intl.formatMessage({ id: "component.contactAside.text" })}
         </span>
