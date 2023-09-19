@@ -13,7 +13,7 @@ const ContactAside = () => {
         </span>
         <a
           className="flex  transition-all items-center font-gillSansRegular font-ligth justify-center h-10 mt-2 text-lg p-2  rounded-xl text-white bg-customRed"
-          href="https://wa.me/529981225203?text=Hola,%20quisiera%20rentar%20un%20auto."
+          href="https://wa.me/5219981035129?text=Hola,%20quisiera%20rentar%20un%20auto."
           target={"_blank"}
           rel="noreferrer"
         >
