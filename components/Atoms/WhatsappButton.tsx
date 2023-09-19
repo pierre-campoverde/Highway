@@ -6,7 +6,7 @@ const WhatsappButton = () => {
   return (
     <a
       className="flex shadow-2xl shadow-rose-700 transition-all items-center font-gillSansRegular justify-center h-14 text-2xl p-2 w-full rounded-xl text-white bg-customRed hover:bg-rose-700"
-      href="https://wa.me/529981225203?text=Hola,%20quisiera%20rentar%20un%20auto."
+      href="https://wa.me/5219981035129?text=Hola,%20quisiera%20rentar%20un%20auto."
       target={"_blank"}
       rel="noreferrer"
     >
