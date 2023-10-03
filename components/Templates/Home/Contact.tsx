@@ -37,14 +37,14 @@ const Contact = () => {
                 <AiFillPhone />
               </span>
             </ContactInfo>
-            <ContactInfo
+            {/* <ContactInfo
               href="https://goo.gl/maps/D8G74SMNdBqKhvRK8"
               label="Carr. Tulum-Cancun 102a"
             >
               <span className="text-customRed text-3xl">
                 <AiTwotoneEnvironment />
               </span>
-            </ContactInfo>
+            </ContactInfo> */}
           </div>
           <div className="flex justify-center my-2">
             <SocialMediaButton
