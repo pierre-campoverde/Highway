@@ -26,7 +26,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
             <p><strong>Message: </strong> ${Mensaje}</p></br>
             `
         });
-
+        
     } catch (error) {
         return res.status(500);
     }
