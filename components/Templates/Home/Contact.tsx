@@ -32,11 +32,6 @@ const Contact = () => {
                 <AiFillPhone />
               </span>
             </ContactInfo>
-            <ContactInfo href="tel:+529981402018" label="+52-998-140-2018">
-              <span className="text-customRed text-3xl">
-                <AiFillPhone />
-              </span>
-            </ContactInfo>
             <ContactInfo
               href="https://maps.app.goo.gl/aNKGuQ9FMyLXRnnq7"
               label="Av Nader, Mzn 1, SM2, edif. Savas "
